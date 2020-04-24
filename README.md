@@ -102,7 +102,7 @@ vscode-spotify - Allows Spotify control from within VS Code
 
 ## [Event Handlers (MDN)](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers)
 
-## [Documenting Your Projects on GitHub] (https://guides.github.com/features/wikis/)
+## [Documenting Your Projects on GitHub](https://guides.github.com/features/wikis/)
 # 
 ## Coding Challenge Sites:
 www.hackerrank.com
