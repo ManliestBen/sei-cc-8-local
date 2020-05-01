@@ -1,6 +1,8 @@
 # Number Guessing Game
 ## JavaScript/HTML/CSS
 # 
+## A deployed version of the final game can be found [here](https://www.benmanley.biz/guessing-game/).
+# 
 ## User Stories:
 - As a user(AAU), I should be able to enter a guess a number within a given range.
 - AAU, I should see a message if my guess is outside the indicated range.
