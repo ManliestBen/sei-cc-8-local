@@ -17,7 +17,10 @@ git reset --hard origin/master
 ## Daily Schedule:
 ![daily schedule](images/daily-schedule.png)
 # 
-## Recorded lessons can be found [here](https://www.youtube.com/playlist?list=PL51l5r1uFLPOoHTAWQdr4EMpV5zbEPhDx). 
+## Recorded Global lessons can be found [here](https://www.youtube.com/playlist?list=PL51l5r1uFLPOoHTAWQdr4EMpV5zbEPhDx). 
+# 
+## Recorded Local lessons are listed here:
+# [Number Guessing Game - Part 1](https://drive.google.com/file/d/1beCMddmlE_XNXz1Q6X4kZWzh-OdIUD0B/view?usp=sharing).
 # 
 ## SEI-CC-8 Class repository can be found [here](https://git.generalassemb.ly/SEI-CC/SEI-CC-8).
 # 
