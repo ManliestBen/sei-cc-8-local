@@ -357,18 +357,6 @@ function render(guess) {
 }
 ```
 # 
-## Step 22: Update the event listener function by adding a method to remove all the children appended to the previous guesses element from the DOM:
-```js
-resetBtn.addEventListener('click', function() {
-    // New code below
-    if (guessList.length != 0) {
-        while (guessesEl.firstChild) {
-            guessesEl.removeChild(guessesEl.lastChild);
-        }
-    }
-    init();
-});
-```
 # ----------- Code Checkpoint -----------
 ## Listed below are the contents of index.html, main.js, and style.css.  Use these as references if you're encountering any errors.
 # index.html:
