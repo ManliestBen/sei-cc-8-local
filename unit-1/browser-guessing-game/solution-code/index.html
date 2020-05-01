@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+</head>
+<body>
+    <h1 id="title">Number Guessing Game</h1>
+    <h3 id="message">Please enter a guess between 1 and 100!</h3>
+    <div>
+        <input id="guessInput" type="text" placeholder="Enter guess here...">
+        <button id="guessButton" class="btn btn-primary">Guess</button>
+    </div>
+    <div id="prevGuesses">Previous guesses:
+    </div>
+    <button id="resetButton" class="btn btn-danger">Reset</button>
+</body>
+</html>

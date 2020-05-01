@@ -1,0 +1,31 @@
+
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#prevGuesses {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.guess {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+.winner {
+    color: green;
+}
