@@ -44,9 +44,8 @@ function init() {
     messageEl.innerText = 'Please enter a number between 1 and 100'
     guessList = [];
     isWinner = false;
-    secretNum = Math.floor(Math.random()*5) + 1;
+    secretNum = Math.floor(Math.random()*100) + 1;
     render();
-    console.log(secretNum);
 }
 
 function checkGuess (guess) {
