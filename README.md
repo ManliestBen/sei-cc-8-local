@@ -21,6 +21,8 @@ git reset --hard origin/master
 # 
 ## Recorded Local lessons are listed here:
 # [Number Guessing Game - Part 1](https://drive.google.com/file/d/1beCMddmlE_XNXz1Q6X4kZWzh-OdIUD0B/view?usp=sharing).
+# [Number Guessing Game - Part 2](https://drive.google.com/file/d/1MxI5YrtdMtcDZkrZ3V240Q6xlsGYsYbd/view?usp=sharing).
+# [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
 # 
 ## SEI-CC-8 Class repository can be found [here](https://git.generalassemb.ly/SEI-CC/SEI-CC-8).
 # 
