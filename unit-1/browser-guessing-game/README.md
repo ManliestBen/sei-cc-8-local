@@ -433,11 +433,6 @@ const guessInput = document.getElementById('guessInput');
 /*------Event Listeners------*/
 
 resetBtn.addEventListener('click', function() {
-    if (guessList.length != 0) {
-        while (guessesEl.firstChild) {
-            guessesEl.removeChild(guessesEl.lastChild);
-        }
-    }
     init();
 });
 
