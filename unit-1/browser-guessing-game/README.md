@@ -4,7 +4,7 @@
 ## A deployed version of the final game can be found [here](https://www.benmanley.biz/guessing-game/).
 # 
 ## User Stories:
-- As a user(AAU), I should be able to enter a guess a number within a given range.
+- As a user(AAU), I should be able to guess a number within a given range.
 - AAU, I should see a message if my guess is outside the indicated range.
 - AAU, I should see a message indicating if my guess is higher or lower than the secret number.
 - AAU, I should see a list of my previous guesses, showing them in different colors based on whether they are over or under the secret number.
@@ -308,7 +308,7 @@ function checkGuess (guess) {
         messageEl.innerText = `${guess} is too high, please try again!`
         guessList.push(guess);
     }
-    render();
+    render(guess);
 }
 ```
 # 
