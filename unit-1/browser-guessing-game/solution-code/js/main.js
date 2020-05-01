@@ -51,6 +51,7 @@ function init() {
 function checkGuess (guess) {
     guessInput.value = '';
     if (guess < 1 || guess > 100) {
+        messageEl.className = 'animated wobble';
         messageEl.innerText = 'Whoops!  Please try a number between 1 and 100.';
     } else if (guess === secretNum) {
         titleEl.className = 'animated bounce'
