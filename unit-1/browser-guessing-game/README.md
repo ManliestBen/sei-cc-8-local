@@ -603,3 +603,28 @@ function checkGuess (guess) {
             messageEl.innerText = `Congratulations!  You found the number in ${guessList.length +1} guesses!`
         }
 ```
+# Adding sound effects:
+## Let's add a sweet kazoo sound effect to go with the awesome confetti.  You'll notice that there's a directory named 'audio' with a file 'kazoo.wav' within it.  Declare a variable in the constants section of main.js:
+```js
+/*------Constants------*/
+const kazoo = new Audio('audio/kazoo.wav');
+```
+# Using setTimeout, add a 1 second delay to the sound effect and include it in the code where the winner is being declared.  Easy peasy, you've got yourself some sweet kazoo action!:
+```js
+function checkGuess (guess) {
+    guessInput.value = '';
+    if (guess < 1 || guess > 100) {
+        messageEl.innerText = 'Whoops!  Please try a number between 1 and 100.';
+    } else if (guess === secretNum) {
+        titleEl.className = 'animated bounce'
+        messageEl.className = 'winner';
+        isWinner = true;
+        confetti.start(1500);
+        // Add this line of code:
+        setTimeout(function(){kazoo.play();},1000);
+        if (guessList.length === 0) {
+            messageEl.innerText = `Congratulations!  You found the number in ${guessList.length +1} guess!`
+        } else {
+            messageEl.innerText = `Congratulations!  You found the number in ${guessList.length +1} guesses!`
+        }
+```

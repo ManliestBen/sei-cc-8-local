@@ -1,4 +1,5 @@
 /*------Constants------*/
+const kazoo = new Audio('audio/kazoo.wav');
 
 /*------Variables------*/
 let secretNum, currentGuess, guessList, isWinner;
@@ -57,6 +58,7 @@ function checkGuess (guess) {
         messageEl.className = 'winner';
         isWinner = true;
         confetti.start(1500);
+        setTimeout(function(){kazoo.play();},1000);
         if (guessList.length === 0) {
             messageEl.innerText = `Congratulations!  You found the number in ${guessList.length +1} guess!`
         } else {
