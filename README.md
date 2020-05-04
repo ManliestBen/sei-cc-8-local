@@ -28,6 +28,7 @@ git reset --hard origin/master
 
 # [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
 # [TicTacToe Explanation](https://drive.google.com/file/d/1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B/view?usp=sharing).
+# [Github Repository Basics](https://drive.google.com/file/d/1yTk6_qM4vpOta2gHIKGbK7tcFVaozxez/view?usp=sharing).
 </details>
 
 ## Install-Related Links
