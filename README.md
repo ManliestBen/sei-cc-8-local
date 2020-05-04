@@ -20,9 +20,15 @@ git reset --hard origin/master
 ## Recorded Global lessons can be found [here](https://www.youtube.com/playlist?list=PL51l5r1uFLPOoHTAWQdr4EMpV5zbEPhDx). 
 # 
 ## Recorded Local lessons are listed here:
+<details>
+<summary>Click to expand</summary>
+
 # [Number Guessing Game - Part 1](https://drive.google.com/file/d/1beCMddmlE_XNXz1Q6X4kZWzh-OdIUD0B/view?usp=sharing).
 # [Number Guessing Game - Part 2](https://drive.google.com/file/d/1MxI5YrtdMtcDZkrZ3V240Q6xlsGYsYbd/view?usp=sharing).
+
 # [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
+</details>
+
 # 
 ## SEI-CC-8 Class repository can be found [here](https://git.generalassemb.ly/SEI-CC/SEI-CC-8).
 # 
@@ -37,6 +43,9 @@ git reset --hard origin/master
 ## Git commands / workflow [cheat sheet](https://rogerdudler.github.io/git-guide/).
 # 
 ## Useful VS Code Extensions:
+<details>
+<summary>Click to expand</summary>
+
 :emojisense:  - Suggestions and auto-complete for emoji in VS Code
 
 Beautify - Adds color to help identify different parts of your code
@@ -72,7 +81,11 @@ Python - Linting/debugging/intellisense for Python
 SQL Server (mssql) - Adds support for SQL linting/colorizing/intellisense
 
 vscode-spotify - Allows Spotify control from within VS Code
-# 
+</details>
+
+## Week 1 Resources
+<details>
+<summary>Click to expand</summary>
 
 ## [Markdown Syntax Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
@@ -106,8 +119,44 @@ vscode-spotify - Allows Spotify control from within VS Code
 ## [Intro to Events (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
 ## [Event Handlers (MDN)](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers)
+</details>
+
+
+## Week 2 Resources
+<details>
+<summary>Click to expand</summary>
+
+## [CSS Flexbox (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+## [Flexbox Froggy](https://flexboxfroggy.com/) - Use this to help learn Flexbox!!!
+## [CSS Grid (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+## [Grid Garden](https://cssgridgarden.com/) - Use this to help learn Grid!!!
+## [Responsive Design - Media Queries (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+## [Callback Functions (MDN)](https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks)
+## [JS Classes (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class)
+## [jQuery (Docs)](https://api.jquery.com/)
+## [Arrow Functions (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+## [this Binding (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+## [Playing Audio (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio)
+
+</details>
+
+## Unit 1 Project Resources
+<details>
+<summary>Click to expand</summary>
 
 ## [Documenting Your Projects on GitHub](https://guides.github.com/features/wikis/)
+## [Wireframe.cc](https://wireframe.cc/) - Simple, easy to use wire-frame designer
+## [Draw.io](https://www.draw.io/) - More robust wire-frame utility, has templates for ERD (Entity Relationship Diagram) that we'll use in Units 2, 3, and 4
+## [Trello](https://trello.com/) - Organization site to help keep goals/objectives neat and tidy
+## [Google Fonts](https://fonts.google.com/) - So. Many. Fonts.
+## [confetti.js](https://github.com/mathusummut/confetti.js/) - Everybody loves confetti...
+## [Cool JavaScript Effects](https://wpdatatables.com/cool-javascript-effects/) - Links to TONS of fun, easy to use JS resources
+## [CSS/JS Text Animation Snippets](https://speckyboy.com/css-javascript-text-animation-snippets/) - Easy to use code snippets for text animation
+## [Freesound](https://freesound.org/) - So. Many. Free. Sounds.
+
+
+</details>
+
 # 
 ## Coding Challenge Sites:
 www.hackerrank.com
