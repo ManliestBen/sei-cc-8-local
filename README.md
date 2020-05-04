@@ -29,7 +29,10 @@ git reset --hard origin/master
 # [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
 </details>
 
-# 
+## Install-Related Links
+<details>
+<summary>Click here to expand</summary>
+
 ## SEI-CC-8 Class repository can be found [here](https://git.generalassemb.ly/SEI-CC/SEI-CC-8).
 # 
 ## Install-fest for Macs can be found [here](https://git.generalassemb.ly/SEI-CC/SEI-CC-8/blob/master/work/w01/d1/02-installfest.md).
@@ -43,6 +46,7 @@ git reset --hard origin/master
 ## Git commands / workflow [cheat sheet](https://rogerdudler.github.io/git-guide/).
 # 
 ## Useful VS Code Extensions:
+
 <details>
 <summary>Click to expand</summary>
 
@@ -81,6 +85,9 @@ Python - Linting/debugging/intellisense for Python
 SQL Server (mssql) - Adds support for SQL linting/colorizing/intellisense
 
 vscode-spotify - Allows Spotify control from within VS Code
+
+</details>
+
 </details>
 
 ## Week 1 Resources
