@@ -27,6 +27,7 @@ git reset --hard origin/master
 # [Number Guessing Game - Part 2](https://drive.google.com/file/d/1MxI5YrtdMtcDZkrZ3V240Q6xlsGYsYbd/view?usp=sharing).
 
 # [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
+# [TicTacToe Explanation](https://drive.google.com/file/d/1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B/view?usp=sharing).
 </details>
 
 ## Install-Related Links
