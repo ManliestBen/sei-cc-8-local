@@ -23,12 +23,14 @@ git reset --hard origin/master
 <details>
 <summary>Click to expand</summary>
 
-# [Number Guessing Game - Part 1](https://drive.google.com/file/d/1beCMddmlE_XNXz1Q6X4kZWzh-OdIUD0B/view?usp=sharing).
-# [Number Guessing Game - Part 2](https://drive.google.com/file/d/1MxI5YrtdMtcDZkrZ3V240Q6xlsGYsYbd/view?usp=sharing).
+## [Number Guessing Game - Part 1](https://drive.google.com/file/d/1beCMddmlE_XNXz1Q6X4kZWzh-OdIUD0B/view?usp=sharing).
+## [Number Guessing Game - Part 2](https://drive.google.com/file/d/1MxI5YrtdMtcDZkrZ3V240Q6xlsGYsYbd/view?usp=sharing).
 
-# [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
-# [TicTacToe Explanation](https://drive.google.com/file/d/1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B/view?usp=sharing).
-# [Github Repository Basics](https://drive.google.com/file/d/1yTk6_qM4vpOta2gHIKGbK7tcFVaozxez/view?usp=sharing).
+## [Creating a repository and adding files to it](https://drive.google.com/file/d/1Ue8av-BhAzhZ1lSuXmY8jAvM6xML6ZoW/view?usp=sharing).
+
+## [Github Repository Basics](https://drive.google.com/file/d/1yTk6_qM4vpOta2gHIKGbK7tcFVaozxez/view?usp=sharing).
+## [Tic-Tac-Toe Part 1](https://drive.google.com/file/d/1gfcKzXVWxjQb6YCo1os4RAWxeUHOGdkA/view?usp=sharing).
+## [Tic-Tac-Toe Part 2](https://drive.google.com/open?id=1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B).
 </details>
 
 ## Install-Related Links
