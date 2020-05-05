@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+}
+
+nav {
+    margin-bottom: 2vmin;
+}
+
+#navTitle {
+    font-size: 4vmin;
+    color: white;
+}
+
+#resetButton {
+    margin-bottom: 3vmin;
+}
+
+#difficultyButtons {
+    margin-bottom: 3vmin;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    margin-right: 2vmin;
+}
+
+#message {
+    margin-bottom: 2vmin;
+}
+
+#playArea {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2px;
+}
