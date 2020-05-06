@@ -33,6 +33,7 @@ git reset --hard origin/master
 ## [Tic-Tac-Toe Part 2](https://drive.google.com/open?id=1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B).
 ## [Memory Game Plus Part 1](https://drive.google.com/file/d/1XkWgyiCJJzIfRukrOdAPE8o8pvaP0cc-/view?usp=sharing).
 ## [Memory Game Plus Part 2](https://drive.google.com/file/d/1zoWMl4hQxsJTHM5ZVGaIipyRK08fsWWu/view?usp=sharing).
+## [Memory Game Plus Part 3](https://drive.google.com/file/d/1NHemhmr-mbtjrvzxKabW69Xe63-pcnyK/view?usp=sharing).
 </details>
 
 ## Install-Related Links
