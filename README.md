@@ -31,7 +31,8 @@ git reset --hard origin/master
 ## [Github Repository Basics](https://drive.google.com/file/d/1yTk6_qM4vpOta2gHIKGbK7tcFVaozxez/view?usp=sharing).
 ## [Tic-Tac-Toe Part 1](https://drive.google.com/file/d/1gfcKzXVWxjQb6YCo1os4RAWxeUHOGdkA/view?usp=sharing).
 ## [Tic-Tac-Toe Part 2](https://drive.google.com/open?id=1WMmXDgZ9Jsd_ksCYQYvWETRVrqRgUb8B).
-## [Memory Game Part 1](https://drive.google.com/file/d/1XkWgyiCJJzIfRukrOdAPE8o8pvaP0cc-/view?usp=sharing).
+## [Memory Game Plus Part 1](https://drive.google.com/file/d/1XkWgyiCJJzIfRukrOdAPE8o8pvaP0cc-/view?usp=sharing).
+## [Memory Game Plus Part 2](https://drive.google.com/file/d/1zoWMl4hQxsJTHM5ZVGaIipyRK08fsWWu/view?usp=sharing).
 </details>
 
 ## Install-Related Links
