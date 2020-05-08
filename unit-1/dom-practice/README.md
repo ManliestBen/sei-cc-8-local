@@ -44,6 +44,13 @@
 ## Step 15 (medium): Add a div with an id of 'tacoCatButtons' that contains 3 button elements, each with a class of 'taco-cat-btn' and id's of 'tacoButton,' 'catButton,' and 'tacoCatButton.'  They also have text content of 'Taco,' 'Cat,' and 'TacoCat' respectively.  Write CSS to adjust the font size for the buttons to 20px.  Write cached element references for each of them.  Add an event listener to the div that handles a click and passes the inner text of the button to a function named appendTacoCat as all lower-case letters.
 # 
 ## Step 16 (medium):  Write the function for appendTacoCat.  The function should accept a string and use that to reference one of 3 URLs stored in a lookup object.  Define the object as follows:
+```js
+const tacoCatLookup = {
+    'taco': 'https://www.pngitem.com/pimgs/m/72-720776_taco-pdf-hd-png-download.png',
+    'cat': 'https://media.wired.com/photos/5cdefb92b86e041493d389df/master/pass/Culture-Grumpy-Cat-487386121.jpg',
+    'tacocat': 'https://cdn.dribbble.com/users/977419/screenshots/3414137/tacocat2.png'
+}
+```
 ## Step 17 (medium):  Add a section HTML element with an id of 'tacoCatZone' and add it as a cached element reference.  Write CSS to display all elements within this element as a grid, 5 elements wide, repeating.  Using the string passed to the function, append an img element with a fixed width of 100px to the tacoCatZone section every time one of the buttons is pressed, being sure to append the correct image based on the button click.  Add a line in the init function to reset the inner html of the tacoCatZone to an empty string, then add the init function to the reset button event handler.
 # 
 ## Step 18 (easy):  Add an input element with a type of 'number' and an id of 'mathResult.' Change the font size to 45px, the width to 250px, and center the text within it.  Beneath the input, add a div element with an id of 'mathInputs' containing two additional input elements within.  This div should contain the text '?.'  Give the inputs each a type of 'number,' a value of 0, a class of 'math-input' and id's of 'mathInput1' and 'mathInput2.'  Write CSS to adjust the font size of these input fields to 35px, their width to 100px, and center the text within them.  Adjust font size within the div to 35px and add top and bottom margins of 10px.
