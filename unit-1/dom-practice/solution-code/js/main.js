@@ -1,3 +1,5 @@
+const raveMusic = new Audio('audio/rave.mp3');
+
 const colorLookup = {
     "1": "crimson",
     "2": "orangered",
@@ -104,6 +106,7 @@ doNotPressBtn.addEventListener('click', () => {
     raveInterval = setInterval(ludicrous, 100);
     raveOn.style.display = "none";
     raveOff.style.display = "";
+    raveMusic.pause();
 });
 
 raveOff.addEventListener('click', () => {
@@ -139,6 +142,7 @@ function rave() {
 }
 
 function ludicrous() {
+    raveMusic.play();
     for (var i = elements.length - 1; i >= 0; i--) { 
         var r = Math.floor(Math.random()*256);
         var g = Math.floor(Math.random()*256);
