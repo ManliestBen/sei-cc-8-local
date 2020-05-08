@@ -3,6 +3,8 @@
 # These exercises are designed to help you practice using JavaScript to manipulate HTML elements.  Minimal CSS will be used. 
 ## Please follow each step in order, as steps may require working code from previous steps to function properly.
 # 
+## Check out the application [here](http://benmanley.biz/dom-playground/).
+# 
 ## Step 1 (trivial):  Create an index.html file.  Create js and css directories.  Within the js directory, create main.js.  Within the css directory, create style.css.
 ```
 mkdir js css
