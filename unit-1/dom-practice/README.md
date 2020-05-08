@@ -18,7 +18,7 @@
 # 
 ## Step 5 (easy):  Store each of the 3 HTML elements from step 3 using cached element references.
 # 
-## Step 6:  Write an event listener that listens for a click on the message button and changes the text content of the message element to whatever is currently entered in the input field.
+## Step 6 (easy):  Write an event listener that listens for a click on the message button and changes the text content of the message element to whatever is currently entered in the input field.
 # 
 ## Step 7 (easy):  Write the HTML for an h2 tag that contains the text 'Change the background!'  Also, add HTML for 5 buttons wrapped in a single div element with the id 'buttonRow'.  Each of them should have a class of 'backgroundButton.'  Each of them should have an id of 'button1, button2, etc...'  The button text should contain the numbers 1 - 5.
 # 
@@ -41,7 +41,7 @@
 # 
 ## Step 14 (medium):  Write and invoke an initialization function that hides the 'Show Colors' button when the pages initially loads.  Add functionality to the ternary statement to handle hiding one of the two buttons based on whether or not the colors are showing.  (If the colors are showing, the show button should be hidden and vice versa.)
 # 
-# Step 15 (medium): Add a div with an id of 'tacoCatButtons' that contains 3 button elements, each with a class of 'taco-cat-btn' and id's of 'tacoButton,' 'catButton,' and 'tacoCatButton.'  They also have text content of 'Taco,' 'Cat,' and 'TacoCat' respectively.  Write CSS to adjust the font size for the buttons to 20px.  Write cached element references for each of them.  Add an event listener to the div that handles a click and passes the inner text of the button to a function named appendTacoCat as all lower-case letters.
+## Step 15 (medium): Add a div with an id of 'tacoCatButtons' that contains 3 button elements, each with a class of 'taco-cat-btn' and id's of 'tacoButton,' 'catButton,' and 'tacoCatButton.'  They also have text content of 'Taco,' 'Cat,' and 'TacoCat' respectively.  Write CSS to adjust the font size for the buttons to 20px.  Write cached element references for each of them.  Add an event listener to the div that handles a click and passes the inner text of the button to a function named appendTacoCat as all lower-case letters.
 # 
 ## Step 16 (medium):  Write the function for appendTacoCat.  The function should accept a string and use that to reference one of 3 URLs stored in a lookup object.  Define the object as follows:
 ## Step 17 (medium):  Add a section HTML element with an id of 'tacoCatZone' and add it as a cached element reference.  Write CSS to display all elements within this element as a grid, 5 elements wide, repeating.  Using the string passed to the function, append an img element with a fixed width of 100px to the tacoCatZone section every time one of the buttons is pressed, being sure to append the correct image based on the button click.  Add a line in the init function to reset the inner html of the tacoCatZone to an empty string, then add the init function to the reset button event handler.
