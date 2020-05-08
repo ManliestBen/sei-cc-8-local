@@ -87,6 +87,9 @@ messageBtn.addEventListener('click', function() {
 ## - Button 4:  lime
 ## - Button 5:  rgb(72, 72, 199)
 ```css
+.backgroundButton {
+    width: 50px;
+}
 #button1 {
     background-color: crimson;
 }
