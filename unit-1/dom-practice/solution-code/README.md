@@ -427,3 +427,42 @@ colorButtons.forEach(function(button) {
     });
 });
 ```
+# 
+## Step 23 (medium if you've done step 22): Write another button that contains the text 'DO NOT PRESS THIS BUTTON.'  Add a cached element reference to hold it.  Create an audio directory, put a sound file within it.  Define a variable to hold the sound as a new Audio object.  Write a function called ludicrous that contains identical code to the rave function, adding a line to play the audio and a line to adjust the font size of each changed element to a random number between 1 and 45.  Write an event listener to call ludicrous when clicked, and add a pause feature for the sound when the 'raveOff' button is clicked.
+```
+mkdir audio
+```
+```html
+    <button id='doNotPress'>DO NOT PRESS THIS BUTTON</button>
+```
+```js
+const raveMusic = new Audio('audio/rave.mp3');
+
+const doNotPressBtn = document.getElementById('doNotPress');
+
+doNotPressBtn.addEventListener('click', () => {
+    if (raveInterval) {
+        clearInterval(raveInterval)
+    }
+    raveInterval = setInterval(ludicrous, 100);
+    raveOn.style.display = "none";
+    raveOff.style.display = "";
+    raveMusic.pause();
+});
+
+function ludicrous() {
+    raveMusic.play();
+    for (var i = elements.length - 1; i >= 0; i--) { 
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256); 
+        elements[i].style.color = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256);
+        elements[i].style.backgroundColor = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+        elements[i].style.fontSize = `${Math.random()*45}px`;
+    };    
+}
+
+```

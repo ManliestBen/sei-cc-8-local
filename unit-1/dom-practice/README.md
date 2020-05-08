@@ -67,5 +67,7 @@ const tacoCatLookup = {
 ## Step 22b (ludicrous):  Write a setInterval function to handle changing the background color of button 6 by iterating through all available values of r, g, and b with a 5ms timing.  Declare variables r, g, and b, and colorInterval.  Initialize r = 255, b = 0, g = 0.   
 # 
 ## Step 22c (ludicrous):  Write a function called rainbowFade that does the same thing as the rainbowButton function, but changing the background of the body instead of the button.  Remove it from the setInterval so that it doesn't automatically run.  Define the function colorCycle that was invoked in step 22a.  This function should check for colorInterval in a clearInterval conditional and then use it to setInterval on rainbowFade at 5ms.  Add conditional statements to the colorButtons event listener to handle a button press of 6, so that the text changes to 'STOP,' and the function inside the lookup object is invoked.  Don't forget to add conditionals to flip the button back from 'STOP' to '6,' and clearInterval on the colorInterval when it is pressed.  
-
+# 
+## Step 23 (medium if you've done step 22): Write another button that contains the text 'DO NOT PRESS THIS BUTTON.'  Add a cached element reference to hold it.  Create an audio directory, put a sound file within it.  Define a variable to hold the sound as a new Audio object.  Write a function called ludicrous that contains identical code to the rave function, adding a line to play the audio and a line to adjust the font size of each changed element to a random number between 1 and 45.  Write an event listener to call ludicrous when clicked, and add a pause feature for the sound when the 'raveOff' button is clicked.
+   
 
