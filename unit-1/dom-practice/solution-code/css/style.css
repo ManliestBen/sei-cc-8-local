@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: cornflowerblue;
+}
+
+button {
+    width: 100px;
+    margin: 10px 0 10px 0;
+}
+
+.backgroundButton {
+    width: 50px;
+}
+
+#button1 {
+    background-color: crimson;
+}
+#button2 {
+    background-color: orangered;
+}
+#button3 {
+    background-color: #ffff00;
+}
+#button4 {
+    background-color: lime;
+}
+#button5 {
+    background-color: rgb(72, 72, 199);
+}
+#mathResult {
+    font-size: 45px;
+    width: 250px;
+    text-align: center;
+}
+.math-input {
+    font-size: 35px;
+    width: 100px;
+    text-align: center;
+}
+#mathInputs {
+    font-size: 35px;
+    margin: 10px 0 10px 0;
+}
+.operator {
+    width: 40px;
+    font-size: 25px;
+}
