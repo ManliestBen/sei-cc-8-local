@@ -34,7 +34,8 @@ git reset --hard origin/master
 ## [Memory Game Plus Part 1](https://drive.google.com/file/d/1XkWgyiCJJzIfRukrOdAPE8o8pvaP0cc-/view?usp=sharing).
 ## [Memory Game Plus Part 2](https://drive.google.com/file/d/1zoWMl4hQxsJTHM5ZVGaIipyRK08fsWWu/view?usp=sharing).
 ## [Memory Game Plus Part 3](https://drive.google.com/file/d/1NHemhmr-mbtjrvzxKabW69Xe63-pcnyK/view?usp=sharing).
-## [Dom Playground Part 1](https://drive.google.com/file/d/1OeG_OqkpqHOYCIDrX_Nwyp4He9IgcWhI/view?usp=sharing).
+## [DOM Playground Part 1](https://drive.google.com/file/d/1OeG_OqkpqHOYCIDrX_Nwyp4He9IgcWhI/view?usp=sharing).
+## [DOM Playground Part 2](https://drive.google.com/file/d/1vmgHYKM0nNmcH3aJYj8jNes4_VAVFfFr/view?usp=sharing).
 </details>
 
 ## Install-Related Links
