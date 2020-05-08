@@ -48,6 +48,7 @@ const tacoCatBtn = document.getElementById('tacoCatButton');
 const tacoCatBtns = document.getElementById('tacoCatButtons');
 const tacoCatZone = document.getElementById('tacoCatZone');
 const rainbowBtn = document.getElementById('button6');
+const doNotPressBtn = document.getElementById('doNotPress');
 
 tacoCatBtns.addEventListener('click', function(evt) {
     appendTacoCat(evt.target.innerText.toLowerCase())
@@ -96,6 +97,15 @@ raveOn.addEventListener('click', () => {
     raveOff.style.display = "";
 });
 
+doNotPressBtn.addEventListener('click', () => {
+    if (raveInterval) {
+        clearInterval(raveInterval)
+    }
+    raveInterval = setInterval(ludicrous, 100);
+    raveOn.style.display = "none";
+    raveOff.style.display = "";
+});
+
 raveOff.addEventListener('click', () => {
     location.reload();
 });
@@ -125,6 +135,20 @@ function rave() {
         var g = Math.floor(Math.random()*256);
         var b = Math.floor(Math.random()*256);
         elements[i].style.backgroundColor = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+    };    
+}
+
+function ludicrous() {
+    for (var i = elements.length - 1; i >= 0; i--) { 
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256); 
+        elements[i].style.color = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256);
+        elements[i].style.backgroundColor = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+        elements[i].style.fontSize = `${Math.random()*45}px`;
     };    
 }
 

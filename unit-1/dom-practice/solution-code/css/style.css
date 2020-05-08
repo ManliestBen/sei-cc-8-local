@@ -56,3 +56,7 @@ button {
     width: 100%;
     grid-template-columns: repeat(5, 1fr);
 }
+#doNotPress {
+    font-weight: bold;
+    background-color: red;
+}
