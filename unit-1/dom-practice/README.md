@@ -363,3 +363,64 @@ function rave() {
     };    
 }
 ```
+# 
+## Step 22a (ludicrous):  Add a button alongside the color buttons with an id of 'button6' and inner text of '6.'  Add a cached element reference for the button.  In the lookup object, call a function for the value of the key '6' to invoke a function named colorCycle.
+```html
+<button id='button6' class='backgroundButton'>6</button>
+```
+```js
+const colorLookup = {
+    "1": "crimson",
+    "2": "orangered",
+    "3": "#ffff00",
+    "4": "lime",
+    "5": "rgb(72, 72, 199)",
+    "6": () => {colorCycle()}
+};
+
+const rainbowBtn = document.getElementById('button6');
+```
+
+
+## Step 22b (ludicrous):  Write a setInterval function to handle changing the background color of button 6 by iterating through all available values of r, g, and b with a 5ms timing.  Declare variables r, g, and b, and colorInterval.  Initialize r = 255, b = 0, g = 0.   
+```js
+let r=255, g=0, b=0;
+let colorInterval;
+
+setInterval(function rainbowButton() {
+    if(r > 0 && b == 0){ r--; g++; }
+    if(g > 0 && r == 0){ g--; b++; }
+    if(b > 0 && g == 0){ r++; b--; }
+    rainbowBtn.style.backgroundColor =`rgb(${r},${g},${b})`;
+},5)
+```
+# 
+## Step 22c (ludicrous):  Write a function called rainbowFade that does the same thing as the rainbowButton function, but changing the background of the body instead of the button.  Remove it from the setInterval so that it doesn't automatically run.  Define the function colorCycle that was invoked in step 22a.  This function should check for colorInterval in a clearInterval conditional and then use it to setInterval on rainbowFade at 5ms.  Add conditional statements to the colorButtons event listener to handle a button press of 6, so that the text changes to 'STOP,' and the function inside the lookup object is invoked.  Don't forget to add conditionals to flip the button back from 'STOP' to '6,' and clearInterval on the colorInterval when it is pressed.  
+```js
+function rainbowFade (){
+    if(r > 0 && b == 0){ r--; g++; }
+    if(g > 0 && r == 0){ g--; b++; }
+    if(b > 0 && g == 0){ r++; b--; }
+    document.body.style.backgroundColor =`rgb(${r},${g},${b})`;
+}
+
+function colorCycle(){
+    if (colorInterval) {
+        clearInterval(colorInterval)
+    }
+    colorInterval = setInterval(rainbowFade, 5);
+}
+
+colorButtons.forEach(function(button) {
+    button.addEventListener('click', function(evt) {
+        if (evt.target.innerText === '6') {
+            colorLookup['6']();
+            evt.target.innerText = 'STOP';
+        } else if (evt.target.innerText === 'STOP') {
+            clearInterval(colorInterval);
+            evt.target.innerText = '6';
+        }
+        document.body.style.backgroundColor = colorLookup[evt.target.innerText];
+    });
+});
+```

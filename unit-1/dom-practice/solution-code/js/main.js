@@ -3,7 +3,8 @@ const colorLookup = {
     "2": "orangered",
     "3": "#ffff00",
     "4": "lime",
-    "5": "rgb(72, 72, 199)"
+    "5": "rgb(72, 72, 199)",
+    "6": () => {colorCycle()}
 };
 
 const mathOps = {
@@ -17,7 +18,8 @@ const tacoCatLookup = {
     'cat': 'https://media.wired.com/photos/5cdefb92b86e041493d389df/master/pass/Culture-Grumpy-Cat-487386121.jpg',
     'tacocat': 'https://cdn.dribbble.com/users/977419/screenshots/3414137/tacocat2.png'
 }
-
+let r=255, g=0, b=0;
+let colorInterval;
 let raveInterval;
 
 const colorButtons = document.querySelectorAll('.backgroundButton');
@@ -45,7 +47,7 @@ const catBtn = document.getElementById('catButton');
 const tacoCatBtn = document.getElementById('tacoCatButton');
 const tacoCatBtns = document.getElementById('tacoCatButtons');
 const tacoCatZone = document.getElementById('tacoCatZone');
-
+const rainbowBtn = document.getElementById('button6');
 
 tacoCatBtns.addEventListener('click', function(evt) {
     appendTacoCat(evt.target.innerText.toLowerCase())
@@ -62,6 +64,13 @@ messageBtn.addEventListener('click', function() {
 
 colorButtons.forEach(function(button) {
     button.addEventListener('click', function(evt) {
+        if (evt.target.innerText === '6') {
+            colorLookup['6']();
+            evt.target.innerText = 'STOP';
+        } else if (evt.target.innerText === 'STOP') {
+            clearInterval(colorInterval);
+            evt.target.innerText = '6';
+        }
         document.body.style.backgroundColor = colorLookup[evt.target.innerText];
     });
 });
@@ -119,4 +128,23 @@ function rave() {
     };    
 }
 
+function colorCycle(){
+    if (colorInterval) {
+        clearInterval(colorInterval)
+    }
+    colorInterval = setInterval(rainbowFade, 5);
+}
 
+setInterval(function rainbowButton() {
+    if(r > 0 && b == 0){ r--; g++; }
+    if(g > 0 && r == 0){ g--; b++; }
+    if(b > 0 && g == 0){ r++; b--; }
+    rainbowBtn.style.backgroundColor =`rgb(${r},${g},${b})`;
+},5)
+
+function rainbowFade (){
+    if(r > 0 && b == 0){ r--; g++; }
+    if(g > 0 && r == 0){ g--; b++; }
+    if(b > 0 && g == 0){ r++; b--; }
+    document.body.style.backgroundColor =`rgb(${r},${g},${b})`;
+}
