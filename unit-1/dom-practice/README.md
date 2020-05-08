@@ -29,7 +29,7 @@
 ## - Button 4:  lime
 ## - Button 5:  rgb(72, 72, 199)
 # 
-## Step 9 (medium):  Define an object called colorLookup that has key-value pairs that match the button numbers and colors.  Add a single cached element reference using querySelectorAll for all of the color buttons.  
+## Step 9 (medium):  Define an object called colorLookup that has key-value pairs that match the button text values and colors.  Add a single cached element reference using querySelectorAll for all of the color buttons.  
 # 
 ## Step 10 (medium):  Write a single event listener that handles a click on all the color buttons that changes the background color of the body to the color of the button, using the newly defined object.  
 # 

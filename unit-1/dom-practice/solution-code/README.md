@@ -107,7 +107,7 @@ messageBtn.addEventListener('click', function() {
 }
 ```
 # 
-## Step 9 (medium):  Define an object called colorLookup that has key-value pairs that match the button numbers and colors.  Add a single cached element reference using querySelectorAll for all of the color buttons.  
+## Step 9 (medium):  Define an object called colorLookup that has key-value pairs that match the button text content and colors.  Add a single cached element reference using querySelectorAll for all of the color buttons.  
 ```js
 const colorLookup = {
     "1": "crimson",
