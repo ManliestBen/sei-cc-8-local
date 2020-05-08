@@ -48,3 +48,11 @@ button {
     width: 40px;
     font-size: 25px;
 }
+.taco-cat-btn {
+    font-size: 20px;
+}
+#tacoCatZone {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}

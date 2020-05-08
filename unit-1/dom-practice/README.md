@@ -185,7 +185,72 @@ function init() {
 }
 ```
 # 
-## Step 15 (easy):  Add an input element with a type of 'number' and an id of 'mathResult.' Change the font size to 45px, the width to 250px, and center the text within it.  Beneath the input, add a div element with an id of 'mathInputs' containing two additional input elements within.  This div should contain the text '?.'  Give the inputs each a type of 'number,' a value of 0, a class of 'math-input' and id's of 'mathInput1' and 'mathInput2.'  Write CSS to adjust the font size of these input fields to 35px, their width to 100px, and center the text within them.  Adjust font size within the div to 35px and add top and bottom margins of 10px.
+# Step 15 (medium): Add a div with an id of 'tacoCatButtons' that contains 3 button elements, each with a class of 'taco-cat-btn' and id's of 'tacoButton,' 'catButton,' and 'tacoCatButton.'  They also have text content of 'Taco,' 'Cat,' and 'TacoCat' respectively.  Write CSS to adjust the font size for the buttons to 20px.  Write cached element references for each of them.  Add an event listener to the div that handles a click and passes the inner text of the button to a function named appendTacoCat as all lower-case letters.
+```html
+<div id='tacoCatButtons'>
+    <button class='taco-cat-btn' id='tacoButton'>Taco</button>
+    <button class='taco-cat-btn' id='catButton'>Cat</button>
+    <button class='taco-cat-btn' id='tacoCatButton'>TacoCat</button>
+</div>
+```
+```css
+.taco-cat-btn {
+    font-size: 20px;
+}
+```
+```js
+const tacoBtn = document.getElementById('tacoButton');
+const catBtn = document.getElementById('catButton');
+const tacoCatBtn = document.getElementById('tacoCatButton');
+const tacoCatBtns = document.getElementById('tacoCatButtons');
+
+tacoCatBtns.addEventListener('click', function(evt) {
+    appendTacoCat(evt.target.innerText.toLowerCase())
+});
+```
+# 
+## Step 16 (medium):  Write the function for appendTacoCat.  The function should accept a string and use that to reference one of 3 URLs stored in a lookup object.  Define the object as follows:
+```js
+const tacoCatLookup = {
+    'taco': 'https://www.pngitem.com/pimgs/m/72-720776_taco-pdf-hd-png-download.png',
+    'cat': 'https://media.wired.com/photos/5cdefb92b86e041493d389df/master/pass/Culture-Grumpy-Cat-487386121.jpg',
+    'tacocat': 'https://cdn.dribbble.com/users/977419/screenshots/3414137/tacocat2.png'
+}
+```
+## Step 17 (medium):  Add a section HTML element with an id of 'tacoCatZone' and add it as a cached element reference.  Write CSS to display all elements within this element as a grid, 5 elements wide, repeating.  Using the string passed to the function, append an img element with a fixed width of 100px to the tacoCatZone section every time one of the buttons is pressed, being sure to append the correct image based on the button click.  Add a line in the init function to reset the inner html of the tacoCatZone to an empty string, then add the init function to the reset button event handler.
+```html
+<section id='tacoCatZone'></section>
+```
+```css
+#tacoCatZone {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+```
+```js
+const tacoCatZone = document.getElementById('tacoCatZone');
+
+colorResetBtn.addEventListener('click', function() {
+    document.body.style.backgroundColor = 'cornflowerblue';
+    init();
+});
+
+function init() {
+    showColors.style.display = "none";
+    raveOff.style.display = "none";
+    tacoCatZone.innerHTML = '';
+}
+
+function appendTacoCat(tacoOrCat) {
+    let tempImg = document.createElement('img');
+    tempImg.width = 100;
+    tempImg.src = tacoCatLookup[tacoOrCat];
+    tacoCatZone.appendChild(tempImg);
+}
+```
+# 
+## Step 18 (easy):  Add an input element with a type of 'number' and an id of 'mathResult.' Change the font size to 45px, the width to 250px, and center the text within it.  Beneath the input, add a div element with an id of 'mathInputs' containing two additional input elements within.  This div should contain the text '?.'  Give the inputs each a type of 'number,' a value of 0, a class of 'math-input' and id's of 'mathInput1' and 'mathInput2.'  Write CSS to adjust the font size of these input fields to 35px, their width to 100px, and center the text within them.  Adjust font size within the div to 35px and add top and bottom margins of 10px.
 ```html
 <input id='mathResult'type='number'>
 <div id='mathInputs'>
@@ -210,7 +275,7 @@ function init() {
 }
 ```
 # 
-## Step 16 (easy):  Add a div with an id of 'operators' that contains 4 more buttons.  Each button should have a class of 'operator' and their id's should be 'plus,' 'minus,' 'times,' and 'divided.'  Put the mathematical operators as text within each button.  Write the CSS to adjust the width of the buttons to 40px and the font size to 25px.  Add cached element references for the math result field, both inputs, for each button, and for the div that contains them.
+## Step 19 (easy):  Add a div with an id of 'operators' that contains 4 more buttons.  Each button should have a class of 'operator' and their id's should be 'plus,' 'minus,' 'times,' and 'divided.'  Put the mathematical operators as text within each button.  Write the CSS to adjust the width of the buttons to 40px and the font size to 25px.  Add cached element references for the math result field, both inputs, for each button, and for the div that contains them.
 ```html
 <div id='operators'>
     <button class='operator' id='plus'>+</button>
@@ -236,7 +301,7 @@ const timesBtn = document.getElementById('times');
 const dividedBtn = document.getElementById('divided');
 ```
 # 
-## Step 17 (hard):  Write a single event listener to handle a click on any of the buttons.  Write an object named mathOps that has key-value pairs using the mathematical operators as strings (keys) and a function corresponding to their action that accepts the two input values as numbers (values).  The value of the math result field should be changed to match whatever the result is returned from passing the 3 values (operator, value 1, and value 2) to the object for evaluation.  Oh, and use arrow functions!  (This would be a GREAT job interview question!!!)
+## Step 20 (hard):  Write a single event listener to handle a click on any of the buttons.  Write an object named mathOps that has key-value pairs using the mathematical operators as strings (keys) and a function corresponding to their action that accepts the two input values as numbers (values).  The value of the math result field should be changed to match whatever the result is returned from passing the 3 values (operator, value 1, and value 2) to the object for evaluation.  Oh, and use arrow functions!  (This would be a GREAT job interview question!!!)
 ```js
 const mathOps = {
     "+": (x, y) => {return x + y},
@@ -250,7 +315,7 @@ mathDiv.addEventListener('click', function(evt) {
 });
 ```
 # 
-## Step 18a (ludicrous):  Add two buttons with id's of 'raveOn' and 'raveOff,' with text contents of 'Rave Mode On' and 'Rave Mode Off' respectively.  Add cached element references for each button, along with one that selects ALL elements on the page.  Declare a variable named raveInterval.  Write a click handler for each of the buttons that flips between one or the other being displayed.  Add a statement to the init function to initialize the 'off' button as hidden.  In the click handler for 'on,' write a function that handles setting an interval for a function called rave, using raveInterval and a 100ms interval (be sure to include a clearInterval function check in here to prevent multiple instances).  In the click handler for 'off,' write a function that clears the interval for the raveInterval and refreshes the entire page.
+## Step 21a (ludicrous):  Add two buttons with id's of 'raveOn' and 'raveOff,' with text contents of 'Rave Mode On' and 'Rave Mode Off' respectively.  Add cached element references for each button, along with one that selects ALL elements on the page.  Declare a variable named raveInterval.  Write a click handler for each of the buttons that flips between one or the other being displayed.  Add a statement to the init function to initialize the 'off' button as hidden.  In the click handler for 'on,' write a function that handles setting an interval for a function called rave, using raveInterval and a 100ms interval (be sure to include a clearInterval function check in here to prevent multiple instances).  In the click handler for 'off,' write a function that clears the interval for the raveInterval and refreshes the entire page.
 ```html
 <button id='raveOn'>Rave Mode On</button>
 <button id='raveOff'>Rave Mode Off</button>
@@ -281,7 +346,7 @@ function init() {
 }
 ```
 # 
-## Step 18b (ludicrous):  Write the function called rave that uses the cached element reference for ALL the elements on the page to cycle through each element and change the color and background color to a random rgb value.  
+## Step 21b (ludicrous):  Write the function called rave that uses the cached element reference for ALL the elements on the page to cycle through each element and change the color and background color to a random rgb value.  
 ```js
 function rave() {
     for (var i = elements.length - 1; i >= 0; i--) { 

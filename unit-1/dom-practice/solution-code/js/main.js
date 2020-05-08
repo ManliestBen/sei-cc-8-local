@@ -12,6 +12,11 @@ const mathOps = {
     "*": (x, y) => {return x * y},
     "/": (x, y) => {return x / y},
 };
+const tacoCatLookup = {
+    'taco': 'https://www.pngitem.com/pimgs/m/72-720776_taco-pdf-hd-png-download.png',
+    'cat': 'https://media.wired.com/photos/5cdefb92b86e041493d389df/master/pass/Culture-Grumpy-Cat-487386121.jpg',
+    'tacocat': 'https://cdn.dribbble.com/users/977419/screenshots/3414137/tacocat2.png'
+}
 
 let raveInterval;
 
@@ -35,9 +40,20 @@ const input2 = document.getElementById('mathInput2');
 const elements = document.getElementsByTagName('*');
 const raveOn = document.getElementById('raveOn');
 const raveOff = document.getElementById('raveOff');
+const tacoBtn = document.getElementById('tacoButton');
+const catBtn = document.getElementById('catButton');
+const tacoCatBtn = document.getElementById('tacoCatButton');
+const tacoCatBtns = document.getElementById('tacoCatButtons');
+const tacoCatZone = document.getElementById('tacoCatZone');
+
+
+tacoCatBtns.addEventListener('click', function(evt) {
+    appendTacoCat(evt.target.innerText.toLowerCase())
+});
 
 colorResetBtn.addEventListener('click', function() {
     document.body.style.backgroundColor = 'cornflowerblue';
+    init();
 });
 
 messageBtn.addEventListener('click', function() {
@@ -80,6 +96,14 @@ init();
 function init() {
     showColors.style.display = "none";
     raveOff.style.display = "none";
+    tacoCatZone.innerHTML = '';
+}
+
+function appendTacoCat(tacoOrCat) {
+    let tempImg = document.createElement('img');
+    tempImg.width = 100;
+    tempImg.src = tacoCatLookup[tacoOrCat];
+    tacoCatZone.appendChild(tempImg);
 }
 
 function rave() {
