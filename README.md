@@ -173,7 +173,86 @@ vscode-spotify - Allows Spotify control from within VS Code
 
 </details>
 
+## Unit 2 (Weeks 4-6) Resources
+<details>
+<summary>Click to expand</summary>
+
+## [Node.JS Homepage](https://nodejs.org/)
+## [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
+## [HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+## [Node Package Manager (npm)](https://www.npmjs.com/)
+## [Blocking/Non-Blocking, Async/Sync](http://stackoverflow.com/questions/10570246/what-is-non-blocking-or-asynchronous-i-o-in-node-js)
+## [Basic Directory Structure from express-generator](https://docs.google.com/document/d/1PiFbtFFi_0jLLSjgjdCikr7uA0gIbsvwYu6WRjw9GaQ/edit?usp=sharing)
+## [Express docs for Response object](https://expressjs.com/en/4x/api.html#res)
+## [EJS](https://www.npmjs.com/package/ejs)
+## [EJS - Including partial views](https://www.npmjs.com/package/ejs#includes)
+## [RESTful/Resourceful routing conventions <<--- THIS, THIS, OMG, THIS!!!](https://gist.github.com/jim-clark/17908763db7bd3c403e6)
+## [Method-override middleware](https://www.npmjs.com/package/method-override)
+## [Data modeling (MongoDB documentation)](http://docs.mongodb.org/manual/core/data-modeling-introduction/)
+## [A great video about data modeling](https://www.youtube.com/watch?v=PIWVFUtBV1Q)
+## [MongoDB homepage](https://www.mongodb.org/)
+## [mLab - MongoDB Cloud Hosting](https://mlab.com/)
+## [MongooseJS - ODM](http://mongoosejs.com/)
+## [MongooseJS - Subdocuments](https://mongoosejs.com/docs/subdocs.html)
+## [MongooseJS - Populate](https://mongoosejs.com/docs/populate.html)
+## [MongooseJS - Queries](https://mongoosejs.com/docs/queries.html)
 # 
+# Practice your reps by following these guides:
+## [Cuisine Catalog](https://github.com/ManliestBen/cuisine-catalog): 3 different difficulty levels to practice full-stack MEN using full-CRUD.  Nothing fancy, this handles basic operations with minimal styling.
+## [Recipe-Book](https://github.com/ManliestBen/recipe-book): A little more advanced tutorial to make a recipe-book collection.  This uses a 3rd party API (Edamam) and you’ll need to sign up for a free key.  This is also a work-in-progress, I’ll be adding more functionality to it over time.
+# 
+# Useful tool for querying APIs:
+## [Postman](https://www.getpostman.com/)
+# 
+# Nifty APIs to try out:
+## 
+## Look [here](https://github.com/n0shake/Public-APIs):  A massive, organized list of public APIs
+## 
+### Here are some standout favorites:
+### [NASA](https://api.nasa.gov/) <-- SOOOO COOOOL
+### [Edamam](https://www.edamam.com/) (Food/Recipe/Nutrition)
+### [National Park Service](https://www.nps.gov/subjects/developer/api-documentation.htm#/)
+### [Star Trek API](http://stapi.co/about)
+### [Cat Facts](https://alexwohlbruck.github.io/cat-facts/docs/)
+### [Petfinder Adoption API](https://www.petfinder.com/developers/)
+### [Dog Pictures](https://dog.ceo/dog-api/?ref=apilist.fun)
+### [Spotify Web](https://apilist.fun/api/spotify-web) - NOT easy to use, but really cool!
+### [Last.FM](https://apilist.fun/api/lastfm-api)
+### [SoundCloud](https://apilist.fun/api/soundcloud-api)
+### [Lord of The Rings](https://apilist.fun/api/the-lord-of-the-rings-api)
+### [Quickchart](https://apilist.fun/api/quickchart) - REALLY quick, neat way to display data in a chart 
+### [Open Movie Database](https://apilist.fun/api/omdb)
+### [Notable and Random Quotes](https://apilist.fun/api/notable-and-quotable-random-quote)
+### [Shutterstock](https://developers.shutterstock.com/?ref=apilist.fun)
+### [Twilio](https://www.twilio.com/?ref=apilist.fun) <-- Use this to send SMS notifications!!!
+### [Cocktail Database](https://www.thecocktaildb.com/api.php?ref=apilist.fun)
+### [FreesoundPI](https://freesound.org/docs/api/index.html?ref=apilist.fun)
+### [SuperHero Database](https://superheroapi.com/index.html)
+### [Frankfurter](https://www.frankfurter.app/?ref=apilist.fun) - currency exchange
+### [Open Charge](https://openchargemap.org/site/develop/api?ref=apilist.fun) (EV charge station map)
+### [Wolfram Alpha](http://products.wolframalpha.com/api/?ref=apilist.fun)
+### [Astronomical Data](https://ipgeolocation.io/astronomy-api.html?ref=apilist.fun)
+### [Jeopardy Questions](http://jservice.io/?ref=apilist.fun)
+### [Spoonacular](https://spoonacular.com/food-api) (Restaurant Food Database)
+### [Reddit](https://www.reddit.com/dev/api)
+### [Wunderground](http://www.wunderground.com/weather/api/)
+### [Marvel Comics](http://developer.marvel.com/)
+### [FoaaS](http://www.foaas.com/)
+### [BreweryDB](http://www.brewerydb.com/browse)
+### [Slack](https://api.slack.com/web)
+### [Lob](https://lob.com/) - Email Postcards
+### [Battle.net](https://dev.battle.net/)
+### [IFTTT](https://ifttt.com/)
+### [USDA National Nutrient Database](http://ndb.nal.usda.gov/ndb/api/doc)
+### [Twitter](https://dev.twitter.com/rest/public)
+### [Pokémon API](http://pokeapi.co/) <-- The only way to catch em all!
+### [Open Weather Map](http://openweathermap.org/)
+### [Jokes](https://jokes.one/api/joke/)
+### [Random Facts](https://fungenerators.com/api/facts/)
+
+</details>
+
+#  
 ## Coding Challenge Sites:
 www.hackerrank.com
 

@@ -1,0 +1,28 @@
+<%- include('partials/base') %>
+  <body>
+    <form action="/nasaapi/query" method="POST">
+        <input type="date" name="date" required>
+        <button class="btn waves-effect waves-light" type="submit">Get Image</button>
+    </form>
+    <% if (!results) { %>
+        <h1>NASA APOD Page</h1>
+    <% } else { %>
+
+        <% if (results.media_type === 'image') { %>
+            <h2><%= results.title %></h2>
+            <h4><%= results.date %></h4>
+            <a href=<%= results.hdurl %>>
+                <img src=<%= results.url %>>
+            </a>
+            <p><%= results.explanation %></p>
+        <% } %>
+
+        <% if (results.media_type === 'video') { %>
+            <h2><%= results.title %></h2>
+            <h4><%= results.date %></h4>
+            <iframe src="<%= results.url %>" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <h6><%= results.explanation %></h6>
+        <% } %>
+    <% } %>  
+</body>
+</html>

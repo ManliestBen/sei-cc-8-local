@@ -1,0 +1,12 @@
+<%- include('../partials/base') %>
+<body>
+    <h2>Favorite Recipes</h2>
+    <a href="/recipes/" class="red right waves-effect waves-light btn-small">Done</a><br><br>
+    <div class="collection">
+        <% recipes.forEach(function(r) { %>
+            <form action="/recipes/<%= r._id %>?_method=DELETE" method="POST"><button class="red btn waves-effect waves-light right" type="submit">X</button></form>
+            <a href="/recipes/show/<%= r._id %>" class="collection-item"><%= r.recipeDetails.label %></a><br>
+            <% }) %>
+    </div>
+</body>
+</html>

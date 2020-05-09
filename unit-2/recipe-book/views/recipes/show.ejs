@@ -1,0 +1,32 @@
+<%- include('../partials/base') %>
+<body><% console.dir(recipe) %>
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="<%= recipe.recipeDetails.image %>">
+            </div>
+            <span class="card-title"><%= recipe.recipeDetails.label %></span>
+            <div class="card-content">
+                <p class="text-bold">Yield: <%= recipe.recipeDetails.yield %> servings </p><br>
+                <p>Calories: <%= Math.floor(recipe.recipeDetails.calories) %> per serving</p><br>
+                <p>Ingredients: 
+                    <% recipe.recipeDetails.ingredientLines.forEach(function(i) { %>
+                        <li>
+                            <%= i %>
+                        </li>
+                    <% }); %>
+                </p>
+            </div>
+            <div class="card-action">
+                <form action="/recipes/shoppinglist" method="POST">
+                  <input type="text" name="listItems" hidden value="<%= recipe.recipeDetails.ingredientLines.toString() %>">
+                  <button class="btn waves-effect waves-light btn-small right" type="submit">Add to Shopping List</button>
+                </form>
+              <a class="teal-text" href="<%= recipe.recipeDetails.url %>">Recipe from <%= recipe.recipeDetails.source %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

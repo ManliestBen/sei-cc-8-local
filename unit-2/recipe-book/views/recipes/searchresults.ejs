@@ -1,0 +1,37 @@
+<%- include('../partials/base') %>
+<body>
+    <% if (!recipes) { %>
+        <h2>Oops, something went wrong!</h2>
+    <% } %>
+    <% if (recipes) { %>
+        <a class="waves-effect waves-light btn" href="/recipes/search">Back to Search</a> 
+        <h2>Search Results:</h2><br><br>
+        <% recipes.forEach(function(r) { %>
+            <div class="row">
+                <div class="col s12 m7">
+                <div class="card large">
+                    <div class="card-image">
+                    <img src="<%= r.recipe.image %>">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title"><%= r.recipe.label %></span>
+                    <p>Yield: <%= r.recipe.yield %> servings</p><br>
+                    <% r.recipe.calories = Math.floor(r.recipe.calories) %>
+                    <p><%= r.recipe.calories %> Calories per serving</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text" target="_blank" href="<%= r.recipe.url %>">Recipe from <%= r.recipe.source %></a><br><br>
+                        <form action="/recipes/add" method="POST">
+                            <% var edamam_id = r.recipe.uri.replace("http://www.edamam.com/ontologies/edamam.owl#recipe_","") %>
+                            <input type="text" hidden name="edamam_id" value="<%= edamam_id %>">
+                            <button class="btn waves-effect waves-light" type="submit">Add to Recipe Book</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        <% }) %>
+    <% } %>
+</body>
+</html>

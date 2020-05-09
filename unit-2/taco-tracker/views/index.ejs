@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taco Tracker v1.0.0!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Taco Tracker</h1>
+    <p>Let's track some tacos</p><br>
+    <form action="/tacos" method="POST">
+      <input type="text" name="taco">
+      <button type="submit">Track Taco</button><br><br>
+    </form>
+    <% if (tacos.length) { %>
+      <% tacos.forEach(function(t, idx) { %>
+        <div>
+          <form action="/tacos/<%= idx %>?_method=DELETE" method="POST">
+            <button type="submit" id="deletebtn">X</button>
+          </form>
+          <%= t.taco %>
+          --
+          <%= t.yummy ? 'Yummy' : 'Not Yummy' %>
+          <a href="/tacos/<%= idx %>">Edit Taco</a>
+        </div><br>
+      <% }) %>
+
+    <% } else { %>
+      <h3>There aren't any tacos yet!</h3>
+    <% } %> 
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Show me that taco!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h3>Edit Taco</h3>
+      <form action="/tacos/<%= idx %>?_method=PUT" method="POST">
+          <input type="text" name="taco" value="<%= taco.taco %>">
+          <input type="checkbox" name="yummy" value="yummy" <%= taco.yummy ? 'checked' : '' %>>
+          <button type="submit">Update Taco</button>
+        </form>
+  </body>
+</html>

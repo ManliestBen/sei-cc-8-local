@@ -1,0 +1,15 @@
+<%- include('../partials/base') %>
+    <body>
+        <div class="collection">
+            <a href="/recipes/shoppinglist/deletemode" class="red right waves-effect waves-light btn-small">Remove Items</a>
+                <% listItems[0].listItems.forEach(function(i, idx) { %>
+                    <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span><%= i %></span>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                <% }) %>
+            </div>
+    </body>
+</html>

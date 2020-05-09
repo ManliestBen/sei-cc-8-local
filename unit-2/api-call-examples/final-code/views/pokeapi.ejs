@@ -1,0 +1,34 @@
+<%- include('partials/base') %>
+  <body>
+    <% if (pokemon === null) { %>
+    <h1>PokéAPI Page</h1>
+    <form action="/pokeapi/query" method="POST">
+        <input type="text" name="query" placeholder="Search...">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+    </form>
+    <% } else { %>
+
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src=<%= pokemon.sprites.front_shiny %>>
+        </div>
+        <div class="card-content">
+          <h4><%= pokemon.species.name %></h4>
+          <p>Type: <%= pokemon.types[0].type.name %> </p>
+          <p>Ability 1: <%= pokemon.abilities[0].ability.name %> </p>
+          <p>Ability 2: <%= pokemon.abilities[1].ability.name %> </p>
+          <p><%= pokemon.stats[0].stat.name %>: <%= pokemon.stats[0].base_stat %> </p>
+          <p><%= pokemon.stats[1].stat.name %>: <%= pokemon.stats[1].base_stat %> </p>
+          <p><%= pokemon.stats[2].stat.name %>: <%= pokemon.stats[2].base_stat %> </p>
+          <p><%= pokemon.stats[3].stat.name %>: <%= pokemon.stats[3].base_stat %> </p>
+          <p><%= pokemon.stats[4].stat.name %>: <%= pokemon.stats[4].base_stat %> </p>
+          <p><%= pokemon.stats[5].stat.name %>: <%= pokemon.stats[5].base_stat %> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% } %>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Add Cuisine</title>
+</head>
+<body>
+    <h2>Update cuisine:</h2><br>
+    <form action="/cuisine/update/<%= cuisine._id %>?_method=PUT" method="POST">
+        <label>Recipe Name:
+            <input type="text" name="title" value="<%= cuisine.title %>">
+        </label><br><br>
+        <label>Meal Type (select one):
+            <select name="mealType">
+                <option selected ><%= cuisine.mealType %></option>
+                <option value="Snack">Snack</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+        </label><br><br>
+        <label>Calories (per serving):
+            <input type="text" name="calories" value="<%= cuisine.calories %>">
+        </label><br><br>
+        <label>Ingredients (separate each with a comma):
+            <textarea id="ingredientBox" rows="1" type="text" name="ingredients"><%= cuisine.ingredients.map(i => i).join(', ') %></textarea>
+            </label><br><br>
+        <label>Link to recipe:
+            <input id="urlInput" type="text" name="recipeUrl" value="<%= cuisine.recipeUrl %>">
+        </label><br><br>
+
+        <button type="submit" class="btn btn-success">Update</button>
+    </form>
+</body>
+</html>

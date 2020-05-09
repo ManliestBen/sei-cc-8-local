@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cuisine List</title>
+</head>
+<body>
+    <h2>Cuisine List</h2><br>
+    <table id="cuisineList">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>Meal<br>Type</th>
+                <th>Recipe<br>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% cuisine.forEach(function(c) { %>
+                <tr>
+                    <td><%= c.title %></td>
+                    <td><%= c.mealType %></td>
+                    <td><a href="http://<%= c.recipeUrl %>">See Recipe</a></td>
+                    <td><a href="/cuisine/<%= c._id %>">Details</a></td>
+                    <form action="/cuisine/<%= c._id %>?_method=DELETE" method="POST">
+                    <td><button type="submit" class="btn btn-danger">X</button></td>
+                    </form>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/cuisine/new">Add Cuisine</a>
+
+</body>
+</html>

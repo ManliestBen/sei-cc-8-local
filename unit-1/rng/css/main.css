@@ -1,0 +1,15 @@
+#numberBox {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid;
+    line-height: 100px;
+}

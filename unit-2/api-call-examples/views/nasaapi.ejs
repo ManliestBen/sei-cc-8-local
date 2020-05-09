@@ -1,0 +1,11 @@
+<%- include('partials/base') %>
+  <body>
+    <form action="/nasaapi/query" method="POST">
+        <input type="date" name="date">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Get Image</button>
+    </form>
+    <h1>NASA APOD Page</h1>
+    <img src="https://imbindonesia.com/images/placeholder/camera.jpg">
+    <div><%= results.explanation %></div>
+</body>
+</html>

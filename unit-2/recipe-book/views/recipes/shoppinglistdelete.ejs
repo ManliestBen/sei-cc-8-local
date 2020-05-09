@@ -1,0 +1,18 @@
+<%- include('../partials/base') %>
+    <body>
+        <div class="collection">
+            <a href="/recipes/shoppinglist" class="red right waves-effect waves-light btn-small">Done</a>
+                <% listItems[0].listItems.forEach(function(i, idx) { %>
+                    <p>
+                        <form action="/recipes/shoppinglist/<%= idx %>?_method=DELETE" method="POST">
+                        <label>
+                          <input type="checkbox" />
+                          <span><%= i %></span>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="red btn-small waves-effect waves-light" type="submit">X</button>
+                        </form>
+                    </p>
+                <% }) %>
+            </div>
+    </body>
+</html>

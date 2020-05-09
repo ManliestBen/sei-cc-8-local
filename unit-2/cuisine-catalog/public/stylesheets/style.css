@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#ingredientBox {
+  width: 250px;
+}
+
+#ingredientBox:focus {
+  height: 100px;
+}
+
+#urlInput {
+  width: 430px;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#cuisineList td:nth-child(2), #cuisineList td:nth-child(3){
+  min-width: 100px;
+}
+
+.details-bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+

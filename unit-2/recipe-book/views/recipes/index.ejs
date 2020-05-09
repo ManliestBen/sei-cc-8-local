@@ -1,0 +1,11 @@
+<%- include('../partials/base') %>
+<body>
+    <h2>Favorite Recipes</h2>
+    <a href="/recipes/deletemode" class="red right waves-effect waves-light btn-small">Remove Recipes</a><br><br>
+    <div class="collection">
+        <% recipes.forEach(function(r) { %>
+            <a href="/recipes/show/<%= r._id %>" class="collection-item"><%= r.recipeDetails.label %></a><br>
+            <% }) %>
+    </div>
+</body>
+</html>

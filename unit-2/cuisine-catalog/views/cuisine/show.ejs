@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cuisine Details</title>
+</head>
+<body>
+    <h2>Cuisine Details</h2><br>
+    <div class="details-bold">Recipe Name:</div>
+    <div><%= cuisine.title %></div>
+    <div class="details-bold">Meal Type:</div>
+    <div><%= cuisine.mealType %></div>
+    <div class="details-bold">Calories:</div>
+    <div><%= cuisine.calories %></div>
+    <div class="details-bold">Ingredients:</div>
+    <%= cuisine.ingredients.map(i => i).join(', ') %>
+    <div class="details-bold">Recipe Link:</div>
+    <div><%= cuisine.recipeUrl %></div>
+    <form action="/cuisine/update/<%= cuisine._id %>">
+        <button type="submit" class="btn btn-warning">Edit</button>
+    </form>
+</body>
+</html>
