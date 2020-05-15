@@ -19,6 +19,15 @@ git reset --hard origin/master
 # 
 ## Recorded Global lessons can be found [here](https://www.youtube.com/playlist?list=PL51l5r1uFLPOoHTAWQdr4EMpV5zbEPhDx). 
 # 
+## Project Presentation Recordings are here:
+<details>
+<summary>Click to expand</summary>
+
+## [Unit 1 Presentations](https://drive.google.com/file/d/1QVuRuU7qsJy9Hl0yochNvGAETkYxdgIB/view?usp=sharing)
+
+</details>
+
+
 ## Recorded Local lessons are listed here:
 <details>
 <summary>Click to expand</summary>
