@@ -6,31 +6,30 @@ const inputA = document.getElementById('inputA');
 const inputB = document.getElementById('inputB');
 
 buttonA.addEventListener('click', function() {
-    solutionA(parseInt(inputA.value))
+    let t0 = performance.now();
+    let result = solutionA(parseInt(inputA.value));
+    let t1 = performance.now();
+    messageA.innerText = `Linear time: ${parseFloat((t1 - t0).toFixed(4))} milliseconds.  Result: ${result}`
 });
 buttonB.addEventListener('click', function() {
-    solutionB(parseInt(inputB.value))
+    let t0 = performance.now();
+    let result = solutionB(parseInt(inputB.value));
+    let t1 = performance.now();
+    messageB.innerText = `Exponential time: ${parseFloat((t1 - t0).toFixed(4))} milliseconds.  Result: ${result}`
 });
-
 
 function solutionA(num){
     let a = 1, b = 0, temp;
-    let t0 = performance.now();
     while (num >= 0){
       temp = a;
       a = a + b;
       b = temp;
       num--;
     }
-    let t1 = performance.now();
-    messageA.innerText = `Linear time: ${parseFloat((t1 - t0).toFixed(4))} milliseconds.`
     return b;
 }
 
 function solutionB(num) {
-    let t0 = performance.now();
     if (num <= 1) return 1;
-    let b = solutionB(num - 1) + solutionB(num - 2);
-    let t1 = performance.now();
-    messageB.innerText = `Exponential time: ${parseFloat((t1 - t0).toFixed(4))} milliseconds.`
+    return solutionB(num - 1) + solutionB(num - 2);
 }
