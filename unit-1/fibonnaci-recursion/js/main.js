@@ -16,7 +16,6 @@ buttonB.addEventListener('click', function() {
 function solutionA(num){
     let a = 1, b = 0, temp;
     let t0 = performance.now();
-    
     while (num >= 0){
       temp = a;
       a = a + b;
