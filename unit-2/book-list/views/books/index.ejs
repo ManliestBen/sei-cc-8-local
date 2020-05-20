@@ -1,0 +1,9 @@
+<%- include('../partials/base') %>
+<h1>This is the book index page</h1>
+
+<% books.forEach(function(i, idx) { %>
+    <h3 id='bookTitle'>Title:</h3>
+    <a href='/books/<%= idx %>'><%= i.title %></a>
+<% }) %>
+
+<%- include('../partials/footer') %>
