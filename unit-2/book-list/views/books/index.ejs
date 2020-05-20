@@ -1,9 +1,14 @@
 <%- include('../partials/base') %>
 <h1>This is the book index page</h1>
+<a href="/books/new">Add a book</a>
 
 <% books.forEach(function(i, idx) { %>
     <h3 id='bookTitle'>Title:</h3>
+    <form action="/books/<%= idx %>?_method=DELETE" method="POST">
+        <button type='submit'>X</button>
+    </form>
     <a href='/books/<%= idx %>'><%= i.title %></a>
 <% }) %>
+
 
 <%- include('../partials/footer') %>

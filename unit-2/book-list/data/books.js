@@ -10,7 +10,17 @@ const books = [
 module.exports = {
     getAll,
     getOne,
-    deleteOne
+    deleteOne,
+    add,
+    update
+}
+
+function update(idx, book) {
+    books[idx] = book;
+}
+
+function add(book) {
+    books.push(book);
 }
 
 function getAll() {

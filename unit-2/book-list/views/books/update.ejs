@@ -1,0 +1,6 @@
+<h1>Update book:</h1>
+<form action="/books/edit/<%= idx %>?_method=PUT" method="POST">
+    Title: <input type="text" name='title' value="<%= book.title %>">
+    Author: <input type="text" name='author' value="<%= book.author %>">
+    <button type='submit'>Update Book</button>
+</form>

@@ -58,6 +58,7 @@ git reset --hard origin/master
 ## [Basic Node Tacos Part 1](https://drive.google.com/file/d/1bGXFWDuRJ-NHRDiE55_sFvdWmvlTYRcP/view?usp=sharing)
 ## [Basic Node Tacos Part 2](https://drive.google.com/file/d/16p2wCMxIIKo2hwcXuL4XKb3aGWaK1w1g/view?usp=sharing)
 ## [Node Book List App Part 1](https://drive.google.com/file/d/1Y91afCgCluRPcWtDM9VYhsl40fYcoKlw/view?usp=sharing) 
+## [Node Book List App Part 2](https://drive.google.com/file/d/1Hl1M_MBn8HuIA34WFrHR3pAos1Hsjabz/view?usp=sharing)
 
 </details>
 
