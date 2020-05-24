@@ -1,10 +1,23 @@
 var mongoose = require('mongoose');
 
 var catSchema = new mongoose.Schema({
-  name: String,
-  breed: String,
-  age: Number
-})
+  name: {
+    type: String,
+    required: true
+  },
+  breed: {
+    type: String,
+    default: "Mixed"
+  },
+  age: {
+    type: Number,
+    default: 0
+  },
+  owner: {
+    type: String
+  }
+}, {timestamps: true}
+);
 
 
 var userSchema = new mongoose.Schema({
