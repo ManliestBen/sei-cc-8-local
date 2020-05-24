@@ -11,7 +11,9 @@ module.exports = {
 };
 
 function index(req, res) {
-    res.render('cats/index', {user: req.user})
+    User.find({}, function(err, users) {
+        res.render('cats/index', {user: req.user, users: users})
+    })
 }
 
 function myCats(req, res) {
