@@ -1,3 +1,28 @@
 <%- include('../paritals/header'); %>
 <h1>Add Cat Page</h1>
+<div class="row">
+    <form class="col s12" action="/cats/add" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catName" name="name" type="text">
+          <label for="catName">Cat's Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catBreed" name="breed" type="text">
+          <label for="catBreed">Cat's Breed</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catAge" name="age" type="text">
+          <label for="catAge">Cat's Age</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Add Cat
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
 <%- include('../paritals/footer'); %>

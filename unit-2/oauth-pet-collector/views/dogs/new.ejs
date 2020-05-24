@@ -1,3 +1,28 @@
 <%- include('../paritals/header'); %>
 <h1>Add Dog Page</h1>
+<div class="row">
+    <form class="col s12" action="/dogs/add" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="dogName" name="name" type="text">
+          <label for="dogName">Dog's Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="dogBreed" name="breed" type="text">
+          <label for="dogBreed">Dog's Breed</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="dogAge" name="age" type="text">
+          <label for="dogAge">Dog's Age</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Add Dog
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
 <%- include('../paritals/footer'); %>
