@@ -1,8 +1,8 @@
-<%- include('../paritals/header'); %>
+<%- include('../partials/header'); %>
 <h2>All Cats</h2>
 
 <% users.forEach(function(u) { %>
-    <% u.cats.forEach(function(cat) { %>
+    <% u.cats.forEach(function(cat, idx) { %>
         <div class="row">
             <div class="col s6 m3">
               <div class="card grey darken-3">
@@ -14,7 +14,10 @@
                     <dt>Age:</dt>
                     <dd><%= cat.age %> years old</dd><br>
                     <dt>Owner:</dt>
-                    <dd><%= u.name %></dd>
+                    <dd><%= u.name %></dd><br>
+                    <form class="red-text center" action="/cats/<%= u._id %>/<%= cat._id %>">
+                        <button class="btn yellow waves-effect black-text waves-light" type="submit">Details</button>
+                    </form>
                   </dl>
                 </div>
               </div>
@@ -25,4 +28,4 @@
 <% }) %>
 
 
-<%- include('../paritals/footer'); %>
+<%- include('../partials/footer'); %>

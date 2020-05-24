@@ -7,7 +7,8 @@ module.exports = {
     create,
     edit,
     delete: deleteOne,
-    update
+    update,
+    show
 };
 
 function index(req, res) {
@@ -56,6 +57,16 @@ function update(req, res) {
         usersCat.cats.splice(req.params.idx, 1, req.body);
         usersCat.save(function(err) {
             res.redirect('/cats/myCats');
+        })
+    })
+}
+
+function show(req, res) {
+    User.findById(req.params.userid, function(err, usersCat) {
+        usersCat.cats.forEach(function(c) {
+            if (c._id == req.params.catid) {
+                res.render('cats/show', {user: req.user, cat: c})
+            }
         })
     })
 }

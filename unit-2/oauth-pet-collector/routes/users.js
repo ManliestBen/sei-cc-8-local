@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const usersCtrl = require('../controllers/users');
 
-// GET /users
 router.get('/users', isLoggedIn, usersCtrl.index);
 
 function isLoggedIn(req, res, next) {

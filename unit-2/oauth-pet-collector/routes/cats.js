@@ -8,6 +8,7 @@ router.post('/add', isLoggedIn, catsCtrl.create);
 router.get('/:idx/edit', isLoggedIn, catsCtrl.edit);
 router.delete('/:idx', isLoggedIn, catsCtrl.delete);
 router.put('/:idx', isLoggedIn, catsCtrl.update);
+router.get('/:userid/:catid', catsCtrl.show);
 
 function isLoggedIn(req, res, next) {
     if ( req.isAuthenticated() ) return next();
