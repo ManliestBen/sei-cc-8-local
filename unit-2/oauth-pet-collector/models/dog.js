@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const puppySchema = new Schema({
+const dogSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -24,4 +24,4 @@ const puppySchema = new Schema({
 }, { timestamps: true }
 );
 
-module.exports = mongoose.model('Puppy', puppySchema);
+module.exports = mongoose.model('Dog', dogSchema);
