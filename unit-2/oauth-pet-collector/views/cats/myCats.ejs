@@ -1,5 +1,28 @@
 <%- include('../paritals/header'); %>
-<h2><%= user.name %>'s Cats</h2>
+<h2><%= user.name %>'s cats</h2>
 <a href="/cats/new"class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
-
+<br><br>
+<% cats.forEach((cat, idx) => { %>
+    <div class="row">
+        <div class="col s6 m3">
+          <div class="card grey darken-3">
+            <div class="card-content white-text">
+              <span class="card-title"><%= cat.name %></span>
+              <dl>
+                <dt>Breed:</dt>
+                <dd><%= cat.breed %></dd><br>
+                <dt>Age:</dt>
+                <dd><%= cat.age %> years old</dd><br>
+                <form class="red-text left" action="/cats/<%= idx %>/edit">
+                    <button class="btn yellow waves-effect black-text waves-light" type="submit" name="action">Edit</button>
+                </form>
+                <form class="red-text right" action="/cats/<%= idx %>?_method=DELETE" method="POST">
+                    <button class="btn red waves-effect waves-light" type="submit" name="action">Delete</button>
+                </form>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+<% }) %>
 <%- include('../paritals/footer'); %>
