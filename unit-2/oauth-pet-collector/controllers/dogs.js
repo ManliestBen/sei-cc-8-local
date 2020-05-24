@@ -3,7 +3,8 @@ const Dog = require('../models/dog');
 
 module.exports = {
     index,
-    myDogs
+    myDogs,
+    new: newDog
 };
 
 function index(req, res) {
@@ -12,4 +13,8 @@ function index(req, res) {
 
 function myDogs(req, res) {
     res.render('dogs/myDogs', {user: req.user})
+}
+
+function newDog(req, res) {
+    res.render('dogs/new', {user: req.user})
 }

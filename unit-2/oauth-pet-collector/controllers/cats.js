@@ -2,7 +2,8 @@ const User = require('../models/user');
 
 module.exports = {
     index,
-    myCats
+    myCats,
+    new: newCat
 };
 
 function index(req, res) {
@@ -11,4 +12,8 @@ function index(req, res) {
 
 function myCats(req, res) {
     res.render('cats/myCats', {user: req.user})
+}
+
+function newCat(req, res) {
+    res.render('cats/new', {user: req.user})
 }
