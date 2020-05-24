@@ -21,7 +21,7 @@ const dogSchema = new Schema({
     ownerName: {
         type: String
     },
-    comments: [String] 
+    comments: [] 
 }, { timestamps: true }
 );
 

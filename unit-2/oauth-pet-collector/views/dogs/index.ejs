@@ -12,7 +12,10 @@
                 <dt>Age:</dt>
                 <dd><%= dog.age %> years old</dd><br>
                 <dt>Owner:</dt>
-                <dd><%= dog.ownerName %></dd>
+                <dd><%= dog.ownerName %></dd><br>
+                <form class="red-text center" action="/dogs/<%= dog._id %>">
+                    <button class="btn green waves-effect black-text waves-light" type="submit">Details</button>
+                </form>
               </dl>
             </div>
           </div>

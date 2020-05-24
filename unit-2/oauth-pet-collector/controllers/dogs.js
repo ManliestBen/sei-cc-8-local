@@ -8,7 +8,10 @@ module.exports = {
     create,
     delete: deleteOne,
     edit,
-    update
+    update,
+    show,
+    comment,
+    deleteComment
 };
 
 function index(req, res) {
@@ -54,5 +57,31 @@ function edit(req, res) {
 function update(req, res) {
     Dog.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err) {
         res.redirect('/dogs/myDogs')
+    })
+}
+
+function show(req, res) {
+    Dog.findById(req.params.id, function(err, dog) {
+        res.render('dogs/show', {user: req.user, dog: dog})
+    })
+}
+
+function comment(req, res) {
+    Dog.findById(req.params.id, function(err, dog) {
+        req.body.commentBy = req.user.name;
+        req.body.commentById = req.user._id;
+        dog.comments.push(req.body);
+        dog.save(function(err) {
+            res.redirect(`/dogs/${req.params.id}`)
+        })
+    })
+}
+
+function deleteComment(req, res) {
+    Dog.findById(req.params.id, function(err, dog) {
+        dog.comments.splice(req.params.idx, 1);
+        dog.save(function(err) {
+            res.redirect(`/dogs/${req.params.id}/edit`)
+        })
     })
 }
