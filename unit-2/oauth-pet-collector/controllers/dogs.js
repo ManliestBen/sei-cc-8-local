@@ -15,7 +15,9 @@ function index(req, res) {
 }
 
 function myDogs(req, res) {
-    res.render('dogs/myDogs', {user: req.user})
+    Dog.find({owner: req.user._id}, function(err, dogs) {
+        res.render('dogs/myDogs', {user: req.user, dogs: dogs})
+    })
 }
 
 function newDog(req, res) {
