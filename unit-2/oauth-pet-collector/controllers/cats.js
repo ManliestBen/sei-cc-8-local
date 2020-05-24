@@ -8,7 +8,9 @@ module.exports = {
     edit,
     delete: deleteOne,
     update,
-    show
+    show,
+    comment,
+    deleteComment
 };
 
 function index(req, res) {
@@ -65,7 +67,35 @@ function show(req, res) {
     User.findById(req.params.userid, function(err, usersCat) {
         usersCat.cats.forEach(function(c) {
             if (c._id == req.params.catid) {
-                res.render('cats/show', {user: req.user, cat: c})
+                res.render('cats/show', {user: req.user, cat: c, ownerid: req.params.userid})
+            }
+        })
+    })
+}
+
+function comment(req, res) {
+    User.findById(req.params.userid, function(err, usersCat) {
+        usersCat.cats.forEach(function(c) {
+            if (c._id == req.params.catid) {
+                req.body.commentBy = req.user.name;
+                req.body.commentById = req.user._id;
+                c.comments.push(req.body);
+                usersCat.save(function(err) {
+                    res.redirect(`/cats/${req.params.userid}/${req.params.catid}`)
+                })
+            }
+        })
+    })
+}
+
+function deleteComment(req, res) {
+    User.findById(req.params.userid, function(err, usersCat) {
+        usersCat.cats.forEach(function(c) {
+            if (c._id == req.params.catid) {
+                c.comments.splice(req.params.idx, 1);
+                usersCat.save(function(err) {
+                    res.redirect(`/cats/${req.params.catidx}/edit`)
+                })
             }
         })
     })

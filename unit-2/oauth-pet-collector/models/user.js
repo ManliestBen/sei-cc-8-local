@@ -15,7 +15,8 @@ var catSchema = new mongoose.Schema({
   },
   owner: {
     type: String
-  }
+  },
+  comments: []
 }, {timestamps: true}
 );
 

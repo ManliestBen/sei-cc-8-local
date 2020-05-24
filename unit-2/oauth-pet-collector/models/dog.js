@@ -20,7 +20,8 @@ const dogSchema = new Schema({
     },
     ownerName: {
         type: String
-    } 
+    },
+    comments: [String] 
 }, { timestamps: true }
 );
 

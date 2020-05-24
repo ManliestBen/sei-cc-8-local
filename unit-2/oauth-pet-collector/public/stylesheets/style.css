@@ -14,3 +14,11 @@
 nav {
   background-color: cornflowerblue;
 }
+
+#comment {
+  color: white;
+}
+
+.commentfield {
+  display: inline-flex;
+}
