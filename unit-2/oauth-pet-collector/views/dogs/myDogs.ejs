@@ -14,11 +14,13 @@
                 <dd><%= dog.breed %></dd><br>
                 <dt>Age:</dt>
                 <dd><%= dog.age %> years old</dd><br>
+                <form class="red-text left" action="/dogs/<%= dog._id %>/edit">
+                    <button class="btn yellow waves-effect black-text waves-light" type="submit" name="action">Edit</button>
+                </form>
+                <form class="red-text right" action="/dogs/<%= dog._id %>?_method=DELETE" method="POST">
+                    <button class="btn red waves-effect waves-light" type="submit" name="action">Delete</button>
+                </form>
               </dl>
-            </div>
-            <div class="card-action">
-                <a class="yellow-text" href="#">Edit</a>
-                <a class="red-text right" href="#">Delete</a>
             </div>
           </div>
         </div>

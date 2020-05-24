@@ -5,7 +5,10 @@ module.exports = {
     index,
     myDogs,
     new: newDog,
-    create
+    create,
+    delete: deleteOne,
+    edit,
+    update
 };
 
 function index(req, res) {
@@ -34,4 +37,22 @@ function create(req, res) {
         res.redirect('/dogs/myDogs');
     })
     
+}
+
+function deleteOne(req, res) {
+    Dog.findByIdAndDelete(req.params.id, function(err) {
+        res.redirect('/dogs/myDogs')
+    })
+}
+
+function edit(req, res) {
+    Dog.findById(req.params.id, function(err, dog) {
+        res.render('dogs/update', {user: req.user, dog: dog})
+    })
+}
+
+function update(req, res) {
+    Dog.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err) {
+        res.redirect('/dogs/myDogs')
+    })
 }
