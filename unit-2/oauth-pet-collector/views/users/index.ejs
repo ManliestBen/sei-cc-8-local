@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Users</title>
+  <!-- Google Icon Fonts used by Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <!-- JavaScript for Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Pet Collector</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/cats">All Cats</a></li>
+        <% if (user) { %>
+        <li><a href="">My Cats</a></li>
+        <% } %>
+        <li><a href="/dogs">All Dogs</a></li>
+        <% if (user) { %>
+        <li><a href="">My Dogs</a></li>
+        <% } %>
+        <li>
+          <% if (user) { %>
+            <a href="/logout">Logged in as <%= user.name %> <br><i class="material-icons right">trending_flat</i>Log Out</a>
+            <% } else { %>
+              <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+              <% } %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+</body>
+
+</html>
