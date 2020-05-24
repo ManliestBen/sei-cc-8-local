@@ -1,3 +1,30 @@
 <%- include('../paritals/header'); %>
-
+<h2>Update Cat</h2>
+<div class="row">
+    <form class="col s12" action="/cats/<%= idx %>?_method=PUT" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catName" value="<%= cat.name %>" name="name" type="text">
+          <label for="catName">Cat's Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catBreed" value="<%= cat.breed %>" name="breed" type="text">
+          <label for="catBreed">Cat's Breed</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="catAge" value="<%= cat.age %>" name="age" type="text">
+          <label for="catAge">Cat's Age</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Update Cat
+        <i class="material-icons right">send</i>
+      </button>
+      <a class="btn waves-effect red waves-light" href="/cats/mycats">Cancel
+      </a>
+    </form>
+  </div>
 <%- include('../paritals/footer'); %>

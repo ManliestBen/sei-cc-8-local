@@ -4,7 +4,10 @@ module.exports = {
     index,
     myCats,
     new: newCat,
-    create
+    create,
+    edit,
+    delete: deleteOne,
+    update
 };
 
 function index(req, res) {
@@ -29,4 +32,28 @@ function create(req, res) {
             res.redirect('/cats/myCats')
         })
     });
+}
+
+function edit(req, res) {
+    User.findById(req.user._id, function(err, usersCat) {  
+        res.render('cats/update', {user: req.user, cat: usersCat.cats[req.params.idx], idx: req.params.idx})
+    })
+}
+
+function deleteOne(req, res) {
+    User.findById(req.user._id, function(err, userDeleting) {
+        userDeleting.cats.splice(req.params.idx, 1);
+        userDeleting.save(function(err) {
+            res.redirect('/cats/myCats');
+        })
+    })
+}
+
+function update(req, res) {
+    User.findById(req.user._id, function(err, usersCat) {
+        usersCat.cats.splice(req.params.idx, 1, req.body);
+        usersCat.save(function(err) {
+            res.redirect('/cats/myCats');
+        })
+    })
 }
