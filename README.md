@@ -24,6 +24,8 @@ git reset --hard origin/master
 <summary>Click to expand</summary>
 
 ## [Unit 1 Presentations](https://drive.google.com/file/d/1QVuRuU7qsJy9Hl0yochNvGAETkYxdgIB/view?usp=sharing)
+## [Unit 2 Presentations](https://drive.google.com/file/d/15v1UmUcKs8rgSdWs4latIZYoXnczgbIl/view?usp=sharing)
+
 
 </details>
 

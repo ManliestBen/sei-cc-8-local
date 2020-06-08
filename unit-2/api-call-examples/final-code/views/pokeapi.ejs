@@ -12,11 +12,13 @@
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image">
-          <img src=<%= pokemon.sprites.front_shiny %>>
+          <img src=<%= pokemon.sprites.front_default %>>
         </div>
         <div class="card-content">
           <h4><%= pokemon.species.name %></h4>
-          <p>Type: <%= pokemon.types[0].type.name %> </p>
+          <% pokemon.types.forEach((type) => { %>
+            <p>Type: <%= type.type.name %> </p>
+          <% }) %>
           <p>Ability 1: <%= pokemon.abilities[0].ability.name %> </p>
           <p>Ability 2: <%= pokemon.abilities[1].ability.name %> </p>
           <p><%= pokemon.stats[0].stat.name %>: <%= pokemon.stats[0].base_stat %> </p>
