@@ -66,6 +66,9 @@ git reset --hard origin/master
 
 </details>
 
+
+
+
 ## Install-Related Links
 <details>
 <summary>Click here to expand</summary>
@@ -277,6 +280,14 @@ vscode-spotify - Allows Spotify control from within VS Code
 ### [Open Weather Map](http://openweathermap.org/)
 ### [Jokes](https://jokes.one/api/joke/)
 ### [Random Facts](https://fungenerators.com/api/facts/)
+
+</details>
+
+## Unit 3 (Weeks 7-9) Resources
+<details>
+<summary>Click to expand</summary>
+
+## [GitHub Workflow 1](https://drive.google.com/file/d/1jw9wyttqDQrQaJ4fUwGXdiA2oSi_awxL/view?usp=sharing)
 
 </details>
 
