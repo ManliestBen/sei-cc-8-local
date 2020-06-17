@@ -288,6 +288,10 @@ vscode-spotify - Allows Spotify control from within VS Code
 <summary>Click to expand</summary>
 
 ## [GitHub Workflow 1](https://drive.google.com/file/d/1jw9wyttqDQrQaJ4fUwGXdiA2oSi_awxL/view?usp=sharing)
+# 
+## [Thing Collector](https://drive.google.com/file/d/1TKllhVBpr8mNl27EWoYSYG1Cw3uKPSJ6/view?usp=sharing) 
+# 
+## [Let's Fix A Node](https://drive.google.com/file/d/1heqm3OYflz8OQ1f9wU0FDbxK2wnpT0a9/view?usp=sharing)
 
 </details>
 
