@@ -297,6 +297,14 @@ vscode-spotify - Allows Spotify control from within VS Code
 
 </details>
 
+## Unit 4 (Weeks 10-12) Resources
+<details>
+<summary>Click to expand</summary>
+
+## [Node Back-End Recap (Cocktails)](https://drive.google.com/file/d/1f49E5H6i1MZ2nPz_I_L3i68NRZpIVsxj/view?usp=sharing)
+# 
+## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
+
 #  
 ## Coding Challenge Sites:
 www.hackerrank.com
