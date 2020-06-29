@@ -55,6 +55,9 @@ git reset --hard origin/master
 </details>
 
 ## Unit 2:
+<details>
+<summary>Click to expand:</summary>
+
 # 
 ## [Node Intro](https://drive.google.com/file/d/1IJ-3SY3axXZJCpE54SCxrXa4nP7kN4HP/view?usp=sharing)
 ## [Basic Node Tacos Part 1](https://drive.google.com/file/d/1bGXFWDuRJ-NHRDiE55_sFvdWmvlTYRcP/view?usp=sharing)
@@ -64,6 +67,27 @@ git reset --hard origin/master
 ## [Flights Part 1 - Part 1](https://drive.google.com/file/d/1Pexj-zgfTTFDMiX7UhKhHJ2SW8tw4OV8/view?usp=sharing)
 ## [Flights Part 1 - Part 2](https://drive.google.com/file/d/1uFdZniNwWormh1fxmxfrs4me-5oWlVJa/view?usp=sharing)
 
+</details>
+
+## Unit 3:
+<details>
+<summary>Click to expand:</summary>
+
+## [GitHub Workflow 1](https://drive.google.com/file/d/1jw9wyttqDQrQaJ4fUwGXdiA2oSi_awxL/view?usp=sharing)
+## [Thing Collector](https://drive.google.com/file/d/1TKllhVBpr8mNl27EWoYSYG1Cw3uKPSJ6/view?usp=sharing) 
+## [Let's Fix A Node](https://drive.google.com/file/d/1heqm3OYflz8OQ1f9wU0FDbxK2wnpT0a9/view?usp=sharing)
+## [Node Back-End Review](https://drive.google.com/file/d/177lzSyYSIreeMBXXLd9jf7k8htMgjaGB/view?usp=sharing)
+
+</details>
+
+## Unit 4:
+<details>
+<summary>Click to expand:</summary>
+
+## [Node Back-End Recap (Cocktails)](https://drive.google.com/file/d/1f49E5H6i1MZ2nPz_I_L3i68NRZpIVsxj/view?usp=sharing)
+## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
+
+</details>
 </details>
 
 
@@ -287,23 +311,11 @@ vscode-spotify - Allows Spotify control from within VS Code
 <details>
 <summary>Click to expand</summary>
 
-## [GitHub Workflow 1](https://drive.google.com/file/d/1jw9wyttqDQrQaJ4fUwGXdiA2oSi_awxL/view?usp=sharing)
-# 
-## [Thing Collector](https://drive.google.com/file/d/1TKllhVBpr8mNl27EWoYSYG1Cw3uKPSJ6/view?usp=sharing) 
-# 
-## [Let's Fix A Node](https://drive.google.com/file/d/1heqm3OYflz8OQ1f9wU0FDbxK2wnpT0a9/view?usp=sharing)
-# 
-## [Node Back-End Review](https://drive.google.com/file/d/177lzSyYSIreeMBXXLd9jf7k8htMgjaGB/view?usp=sharing)
-
 </details>
 
 ## Unit 4 (Weeks 10-12) Resources
 <details>
 <summary>Click to expand</summary>
-
-## [Node Back-End Recap (Cocktails)](https://drive.google.com/file/d/1f49E5H6i1MZ2nPz_I_L3i68NRZpIVsxj/view?usp=sharing)
-# 
-## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
 
 #  
 ## Coding Challenge Sites:
