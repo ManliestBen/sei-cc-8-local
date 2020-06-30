@@ -87,6 +87,7 @@ git reset --hard origin/master
 ## [Node Back-End Recap (Cocktails)](https://drive.google.com/file/d/1f49E5H6i1MZ2nPz_I_L3i68NRZpIVsxj/view?usp=sharing)
 ## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
 ## [Binge App (Part 2)](https://drive.google.com/file/d/1TSgNJ2E0G6zEItdCJBIRON2XypMoUlNY/view?usp=sharing)
+## [Binge App (Part 3)](https://drive.google.com/file/d/1iMTM6E0M7QNZXycc31av4lWhXRteFcfz/view?usp=sharing)
 
 </details>
 </details>
