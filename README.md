@@ -88,6 +88,7 @@ git reset --hard origin/master
 ## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
 ## [Binge App (Part 2)](https://drive.google.com/file/d/1TSgNJ2E0G6zEItdCJBIRON2XypMoUlNY/view?usp=sharing)
 ## [Binge App (Part 3)](https://drive.google.com/file/d/1iMTM6E0M7QNZXycc31av4lWhXRteFcfz/view?usp=sharing)
+## [Binge App (Part 4)](https://drive.google.com/file/d/1Ll9McGHQr3JUmhOLl6DfgMPloiqRcUcd/view?usp=sharing)
 
 </details>
 </details>
