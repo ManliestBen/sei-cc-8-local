@@ -85,12 +85,13 @@ git reset --hard origin/master
 <summary>Click to expand:</summary>
 
 ## [Node Back-End Recap (Cocktails)](https://drive.google.com/file/d/1f49E5H6i1MZ2nPz_I_L3i68NRZpIVsxj/view?usp=sharing)
-## [Binge App (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
-## [Binge App (Part 2)](https://drive.google.com/file/d/1TSgNJ2E0G6zEItdCJBIRON2XypMoUlNY/view?usp=sharing)
-## [Binge App (Part 3)](https://drive.google.com/file/d/1iMTM6E0M7QNZXycc31av4lWhXRteFcfz/view?usp=sharing)
-## [Binge App (Part 4)](https://drive.google.com/file/d/1Ll9McGHQr3JUmhOLl6DfgMPloiqRcUcd/view?usp=sharing)
-## [Binge App (Part 5)](https://drive.google.com/file/d/19C-FyFoeiQIQGXfaB-6MNBzG8SX9uaVY/view?usp=sharing)
+## [Binge App Back End (Part 1)](https://drive.google.com/file/d/1AKNrPqWsryPzcVYzdSFkEr6vtvsnKm-B/view?usp=sharing)
+## [Binge App Back End (Part 2)](https://drive.google.com/file/d/1TSgNJ2E0G6zEItdCJBIRON2XypMoUlNY/view?usp=sharing)
+## [Binge App Back End (Part 3)](https://drive.google.com/file/d/1iMTM6E0M7QNZXycc31av4lWhXRteFcfz/view?usp=sharing)
+## [Binge App Back End (Part 4)](https://drive.google.com/file/d/1Ll9McGHQr3JUmhOLl6DfgMPloiqRcUcd/view?usp=sharing)
+## [Binge App Back End (Part 5)](https://drive.google.com/file/d/19C-FyFoeiQIQGXfaB-6MNBzG8SX9uaVY/view?usp=sharing)
 ## [Pokemon React API](https://drive.google.com/file/d/1VPmuKHiiZTczCI7yFF2_eYpJqZlQ1OfH/view?usp=sharing)
+## [Binge App Front End (Part 1)](https://drive.google.com/file/d/1MlqRhA4_RRCy4NZO4T3hLPNpJYN_O5ET/view?usp=sharing)
 
 </details>
 </details>
