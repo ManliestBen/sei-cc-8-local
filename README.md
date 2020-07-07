@@ -93,6 +93,7 @@ git reset --hard origin/master
 ## [Pokemon React API](https://drive.google.com/file/d/1VPmuKHiiZTczCI7yFF2_eYpJqZlQ1OfH/view?usp=sharing)
 ## [Binge App Front End (Part 1)](https://drive.google.com/file/d/1MlqRhA4_RRCy4NZO4T3hLPNpJYN_O5ET/view?usp=sharing)
 ## [Binge App Front End (Part 2)](https://drive.google.com/file/d/1yPB88lUIPj3CHH0BgxP0nXRq7xHD4-zu/view?usp=sharing)
+## [Binge App Front End (Part 3)](https://drive.google.com/file/d/1Se12xtCJyvay-7WWObAjuIYSRE3BnOng/view?usp=sharing)
 
 </details>
 </details>
