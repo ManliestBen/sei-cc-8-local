@@ -96,6 +96,7 @@ git reset --hard origin/master
 ## [Binge App Front End (Part 3)](https://drive.google.com/file/d/1Se12xtCJyvay-7WWObAjuIYSRE3BnOng/view?usp=sharing)
 ## [Binge App Front End (Part 4)](https://drive.google.com/file/d/1jYsIYcG58ERofnwb9LhzkFiWRJ3qtLc7/view?usp=sharing)
 ## [Binge App Front End (Part 5)](https://drive.google.com/file/d/18hNArAlS-jIXRqrARGlyrVmhb_wFK6no/view?usp=sharing)
+## [Unit 4 Assessment Prep](https://drive.google.com/file/d/1-9my-1E94f1vVDGwhR3JQB87Hi4waQeb/view?usp=sharing)
 
 </details>
 </details>
