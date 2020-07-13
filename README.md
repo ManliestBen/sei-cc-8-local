@@ -98,6 +98,7 @@ git reset --hard origin/master
 ## [Binge App Front End (Part 5)](https://drive.google.com/file/d/18hNArAlS-jIXRqrARGlyrVmhb_wFK6no/view?usp=sharing)
 ## [Unit 4 Assessment Prep](https://drive.google.com/file/d/1-9my-1E94f1vVDGwhR3JQB87Hi4waQeb/view?usp=sharing)
 ## [JWT Auth Preview](https://drive.google.com/file/d/1jqYzJoihiuK_LsjxnGPpAdewDMKobTb4/view?usp=sharing)
+## [CSS Frameworks](https://drive.google.com/file/d/1exu5n3nmHbQ55a9LQQI9aDSVHcN57mrb/view?usp=sharing)
 
 </details>
 </details>
